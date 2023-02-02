@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/Logo--img.png" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Cadastro de Usuário</title>
+    <style>
+        body {
+            font-size: 1.1rem;
+            background-color: #1d1825;
+            max-width: 100vw;
+            max-height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 2.3rem;
+        }
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-color: #2f2741;
+            padding-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        input {
+            border: 1px solid;
+            border-radius: 5px;
+            height: 20px;
+        }
+
+        .camposCadUsuario {
+            margin-bottom: 10px;
+        }
+
+        #btnCadastrar {
+            width: 100px;
+            height: 30px;
+            font-size: 1.0rem;
+            background-color: #a38fd3;
+            font-weight: bold;
+        }
+
+        #btnCadastrar:hover {
+            color: royalblue;
+        }
+
+        @media screen and (min-width: 1200px) {
+            form {
+                margin-left: 100px;
+                margin-right: 100px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="../default.html"><img class="logo--header" src="../images/Logo--img.png" alt=""></a>
+        <div class="nav--desktop">
+            <a href="">Psicólogos</a>
+        </div>
+        <aside class="container--nav-mobile">
+            <div class="container--nav-btn-mobile">
+                <span class="bnt--mobile-linha-1"></span>
+                <span class="bnt--mobile-linha-2"></span>
+                <span class="bnt--mobile-linha-3"></span>
+            </div>
+            <ul class="nav--area">
+                <li><a href="">Psicólogos</a></li>
+            </ul>
+        </aside>
+
+    </header>
+    <main>
+        <form id="formCadUsuario" runat="server">
+            <h1>Cadastre-se</h1>
+            <div class="camposCadUsuario">
+                <label for="nomeUsuario">Nome Completo: </label>
+                <input type="text" name="nomeUsuario">
+            </div>
+            <div class="camposCadUsuario">
+                <label for="loginUsuario">Login: </label>
+                <input type="text" name="loginUsuario">
+            </div>
+            <div class="camposCadUsuario">
+                <label for="senhaUsuario">Senha: </label>
+                <input type="text" name="senhaUsuario">
+            </div>
+            <div id="alerta" class="camposCadUsuario">
+                <label for="alerta"></label>
+            </div>
+            <div id="btnEnviarFormulario">
+                <input type="submit" value="Cadastrar" id="btnCadastrar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="footer2">
+            <figure>
+                <img src="../images/logo2.png" alt="logo" id="logoFooter">
+            </figure>
+
+            <address>
+                <img src="../images/email.png" alt="E-mail" id="imgEmail">
+                <a class="socialFooter" href="">: Contato@HappyMind.com</a>
+            </address>
+
+            <address>
+                <img src="../images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
+                <a class="socialFooter" href="">: (13) 99639-6895</a>
+            </address>
+
+            <p id="referenciaFooter">Desenvolvido por turma TI-42</p>
+        </div>
+        <p id="avisoFooter">
+            ATENÇÃO: Este portal não oferece atendimento de urgência para
+            casos relacionados a crises suicidas. Nestes casos, entre em
+            contato gratuitamente com o CVV (Centro de Valorização da Vida)
+            pelo telefone 188 ou acesse www.cvv.org.br. Em caso de
+            emergências, busque o hospital mais próximo ou ligue 192
+            (SAMU).
+        </p>
+    </footer>
+</body>
+
+</html>
