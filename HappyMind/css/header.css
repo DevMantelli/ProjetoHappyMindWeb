@@ -1,0 +1,38 @@
+header {
+    width: 100vw;
+    height: 90px;
+    background-color: var(--bg-cor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo--header {
+    width: 100%;
+    height: 80%;
+}
+
+header a {
+    min-width: 20px;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.container--nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.container--nav-btn-mobile {
+    width: 10%;
+    height: 100%;
+}
+
+.nav--desktop {
+    display: none;
+}
