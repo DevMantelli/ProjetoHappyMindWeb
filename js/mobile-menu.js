@@ -16,5 +16,4 @@ function toggleMenu() {
         linha3.classList.remove('active--linha-3');
     }
 
-
 }

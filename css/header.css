@@ -101,8 +101,9 @@ header a {
     width: 0%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
     background-color: #1d1825;
     overflow: hidden;
     transition: all .8s ease-in-out;
@@ -127,9 +128,123 @@ header a {
     padding: 0;
 }
 
+
 .nav--desktop {
     display: none;
 }
+
+/* TELA MODAL LOGIN */
+.modal--login {
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    transform: translateY(60%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM DA TELA LOGIN */
+form {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: #1d1825;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CARDS LOGIN E SENHA */
+.login--card,
+.senha--card {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* INPUTS E LABELS DO CARD LOGIN */
+.login--card label,
+.senha--card label,
+.login--card input,
+.senha--card input {
+    width: 60%;
+
+}
+
+.login--card input,
+.senha--card input {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.login--card label,
+.senha--card label {
+    color: #27bee7;
+    padding: 2px;
+    font-size: 1.5rem;
+}
+
+/* BOTAO CARD LOGIN */
+.modal--login button {
+    margin-top: 30px;
+    width: 30%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #27bee7;
+    font-weight: 600;
+    background-color: #362e49;
+    cursor: pointer;
+}
+
+/* MODAL BOTAO DE VOLTAR */
+.btn--login-close{
+    width: 50px;
+    height: 30px;
+    font-size: 1.1rem;
+    color: #27bee7;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #362e49;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LINK ESQUECI SENHA E CADASTRO */
+.modal--links{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal--links a{
+    max-width: 40%;
+    margin: 0px 20px 0px 0px;
+    color: #3cc6ec;
+}
+
+/* CLASS PARA ATIVAR O MODEL LOGIN */
+.active--modal{
+    display: none;
+}
+
 
 @media screen and (min-width: 800px) {
     .nav--desktop {
@@ -148,9 +263,7 @@ header a {
         color: #27bee7;
     }
 
-    .nav--desktop a:hover {
-        border-bottom: dashed 2px #27bee7;
-    }
+
 
     .container--nav-btn-mobile {
         display: none;
@@ -171,7 +284,7 @@ header a {
     }
 
     .nav--desktop a {
-        width: 120px;
+        width: 100%;
         height: 40px;
         display: flex;
         justify-content: center;
@@ -181,9 +294,14 @@ header a {
         color: #27bee7;
     }
 
-    .nav--desktop a:hover {
-        border-bottom: dashed 2px #27bee7;
+    .nav--desktop a:nth-child(2) p {
+        border-radius: 10px;
+        width: 70%;
+        padding: 5px;
+        background-color: #362e49;
+        text-align: center;
     }
+
 
     .nav--desktop a p {
         font-size: 2rem;
