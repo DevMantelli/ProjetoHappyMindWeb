@@ -1,3 +1,13 @@
+:root {
+    --bg-cor: #1d1825;
+    --bg-cor-sec: #2f2741;
+    --font-color: #F5F5FA;
+    --font-color-blue: #27bee7;
+    --font-size-small: 1.1rem;
+    --font-size-medium: 1.8rem;
+    --font-size-big: 2.4rem;
+}
+
 header {
     width: 100vw;
     height: 90px;
@@ -5,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
     position: fixed;
     z-index: 999;
 }
@@ -52,7 +63,9 @@ header a {
     background-color: #27bee7;
     border-radius: 30px;
     transition: all .6s ease-in-out;
-}.active--linha-1{
+}
+
+.active--linha-1 {
     transform: translateY(10px) rotate(-310deg);
 }
 
@@ -63,7 +76,9 @@ header a {
     margin: 7px 0px 7px 0px;
     border-radius: 30px;
     transition: all .5s 100ms ease-out;
-}.active--linha-2{
+}
+
+.active--linha-2 {
     opacity: 0;
 }
 
@@ -73,13 +88,15 @@ header a {
     background-color: #27bee7;
     border-radius: 30px;
     transition: all .6s ease-in-out;
-}.active--linha-3{
+}
+
+.active--linha-3 {
     transform: translateY(-10px) rotate(310deg);
 }
 
 .nav--area {
     position: fixed;
-    top: 90px;
+    top: 70px;
     right: 0;
     width: 0%;
     height: 100vh;
@@ -119,7 +136,8 @@ header a {
         display: flex;
         margin-right: 50px;
     }
-    .nav--desktop a{
+
+    .nav--desktop a {
         width: 120px;
         height: 40px;
         display: flex;
@@ -130,14 +148,15 @@ header a {
         color: #27bee7;
     }
 
-    .nav--desktop a:hover{
+    .nav--desktop a:hover {
         border-bottom: dashed 2px #27bee7;
     }
 
     .container--nav-btn-mobile {
         display: none;
     }
-    .nav--area{
+
+    .nav--area {
         display: none;
     }
 
@@ -145,9 +164,12 @@ header a {
 
 @media screen and (min-width: 1300px) {
     .nav--desktop {
+        width: 30%;
         display: flex;
-        margin-right: 80px;
+        justify-content: space-evenly;
+
     }
+
     .nav--desktop a {
         width: 120px;
         height: 40px;
@@ -159,18 +181,19 @@ header a {
         color: #27bee7;
     }
 
-    .nav--desktop a:hover{
+    .nav--desktop a:hover {
         border-bottom: dashed 2px #27bee7;
     }
 
-    .nav--desktop a p{
+    .nav--desktop a p {
         font-size: 2rem;
     }
 
     .container--nav-btn-mobile {
         display: none;
     }
-    .nav--area{
+
+    .nav--area {
         display: none;
     }
 
