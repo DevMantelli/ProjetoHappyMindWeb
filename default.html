@@ -178,15 +178,11 @@
             font-size: 1rem;
             text-align: center;
             padding: 0rem 5rem 0rem 5rem;
+
         }
 
         .slider--item h2 {
             margin-bottom: 30px;
-        }
-
-        .slider--item img {
-            width: 300px;
-            height: 100px;
         }
 
         .slider--controls {
@@ -356,13 +352,12 @@
     <header>
 
         <a href="/default.html"><img class="logo--header" src="/images/Logo--img.png" alt=""></a>
+
         <div class="nav--desktop">
             <a href="">
                 <p>Psicólogos</p>
             </a>
-            <a href="">
-                <p>Usuário</p>
-            </a>
+            <p onclick="logingModal()">Entrar</p>
         </div>
 
         <div class="container--nav-btn-mobile" onclick="toggleMenu()">
@@ -371,23 +366,26 @@
             <span class="bnt--mobile-linha-3"></span>
         </div>
         <ul class="nav--area">
-            <li><a href="">Psicólogos</a></li>
-            <li onclick="logingModal()">Usuário</li>
+            <li><a href=""><i class="bi bi-people-fill"></i>Psicólogos</a></li>
+            <li onclick="logingModal()"><i class="bi bi-person-fill"></i> Entrar</li>
         </ul>
 
         <div class="modal--login">
-            <form>
-                <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
+            <form class="form--login">
+                <div class="back--btn">
+                    <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
+                </div>
+
                 <div class="login--card">
                     <label for="login">Login </label>
                     <input type="text">
                 </div>
                 <div class="senha--card">
                     <label for="">Senha </label>
-                    <input type="text">
+                    <input type="password">
                 </div>
                 <div class="modal--links">
-                    <a href="">Cadastre-se</a>
+                    <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
                     <a href="">Esqueci a senha</a>
                 </div>
                 <button>Logar</button>
@@ -402,9 +400,7 @@
             <img class="img--logo-texto-h1" src="/images/Logo--Texto.png" alt="">
             <img class="bg--image-slogan" src="/images/Online page-amico.png" alt="">
             <div class="slogan--container-texto">
-                <p>A HappyMind é um espaço 100% online onde você poderá receber auxílio de profissionais da area da
-                    saúde mental. </p>
-
+                <p>A HappyMind é um espaço 100% online onde você poderá receber auxílio de profissionais. </p>
             </div>
 
         </div>
