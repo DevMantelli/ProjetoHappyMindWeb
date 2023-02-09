@@ -19,13 +19,25 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: white;
             margin: 0;
+<<<<<<< HEAD
+=======
+            padding: 0;
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
         }
 
         main {
             margin-top: 90px;
             width: 100vw;
             height: 50%;
+<<<<<<< HEAD
             margin-bottom: 60px;
+=======
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
         }
 
         h1 {
@@ -41,8 +53,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            border: solid 0px;
             border-radius: 80px;
             background-color: #2f2741;
+<<<<<<< HEAD
             padding-bottom: 30px;
             margin-left: 20px;
             margin-right: 20px;
@@ -56,6 +71,32 @@
             outline: none;
             padding: 5px;
             height: 20px;
+=======
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        input {
+            border: 0px solid;
+            border-radius: 5px;
+        }
+
+        footer {
+            padding-top: 30px;
+        }
+
+
+        .txtForm,
+        .txtPequeno {
+            width: 200px;
+            font-size: 1.2rem;
+        }
+
+        .txtPequeno {
+            width: 290px;
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
         }
 
         .camposCadUsuario {
@@ -64,6 +105,10 @@
             max-width: 50%;
             display: flex;
             flex-direction: column;
+        }
+
+        #txtLogin {
+            width: 294px;
         }
 
         #btnCadastrar {
@@ -75,6 +120,7 @@
         }
 
         #btnCadastrar:hover {
+<<<<<<< HEAD
             color: rgb(46, 94, 240);
             cursor: pointer;
         }
@@ -92,13 +138,83 @@
                 display: flex;
                 flex-direction: column;
             }
+=======
+            color: rgb(15, 6, 99);
+            background-color: royalblue;
+        }
+
+        @media screen and (min-width: 800px) {
+            form {
+                margin-left: 150px;
+                margin-right: 150px;
+                padding-bottom: 25px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            label {
+                font-size: 1.3rem;
+            }
+
+            .txtForm,
+            .txtPequeno {
+                width: 200px;
+                font-size: 1.3rem;
+            }
+
+            .txtPequeno {
+                width: 296px;
+            }
+
+            #txtLogin {
+                width: 300px;
+            }
+
+            #btnCadastrar {
+                width: 125px;
+                height: 35px;
+                font-size: 1.3rem;
+            }
+
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
         }
 
         @media screen and (min-width: 1200px) {
             form {
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 200px;
+                margin-right: 200px;
+                padding-bottom: 40px;
 
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            label {
+                font-size: 1.5rem;
+            }
+
+            .txtForm,
+            .txtPequeno {
+                width: 400px;
+                font-size: 1.5rem;
+            }
+
+            .txtPequeno {
+                width: 513px;
+            }
+
+            #txtLogin {
+                width: 518px;
+            }
+
+            #btnCadastrar {
+                width: 150px;
+                height: 40px;
+                font-size: 1.5rem;
             }
         }
 
@@ -136,7 +252,13 @@
             <a href="">
                 <p>Psicólogos</p>
             </a>
+<<<<<<< HEAD
             <p onclick="logingModal()">Entrar</p>
+=======
+            <a href="">
+                <p>Usuário</p>
+            </a>
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
         </div>
 
         <div class="container--nav-btn-mobile" onclick="toggleMenu()">
@@ -145,6 +267,7 @@
             <span class="bnt--mobile-linha-3"></span>
         </div>
         <ul class="nav--area">
+<<<<<<< HEAD
             <li><a href=""><i class="bi bi-people-fill"></i>Psicólogos</a></li>
             <li onclick="logingModal()"><i class="bi bi-person-fill"></i> Entrar</li>
         </ul>
@@ -155,16 +278,32 @@
                     <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
                 </div>
 
+=======
+            <li><a href="">Psicólogos</a></li>
+            <li onclick="logingModal()">Usuário</li>
+        </ul>
+
+        <div class="modal--login">
+            <form>
+                <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
                 <div class="login--card">
                     <label for="login">Login </label>
                     <input type="text">
                 </div>
                 <div class="senha--card">
                     <label for="">Senha </label>
+<<<<<<< HEAD
                     <input type="password">
                 </div>
                 <div class="modal--links">
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
+=======
+                    <input type="text">
+                </div>
+                <div class="modal--links">
+                    <a href="">Cadastre-se</a>
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
                     <a href="">Esqueci a senha</a>
                 </div>
                 <button>Logar</button>
@@ -175,17 +314,19 @@
     <main>
         <form id="formCadUsuario" runat="server">
             <h1>Cadastre-se</h1>
-            <div class="camposCadUsuario">
-                <label for="nomeUsuario">Nome Completo: </label>
-                <input type="text" name="nomeUsuario">
-            </div>
-            <div class="camposCadUsuario">
-                <label for="loginUsuario">Login: </label>
-                <input type="text" name="loginUsuario">
-            </div>
-            <div class="camposCadUsuario">
-                <label for="senhaUsuario">Senha: </label>
-                <input type="text" name="senhaUsuario">
+            <div class="container--campos">
+                <div class="camposCadUsuario">
+                    <label for="nomeUsuario">Nome Completo: </label>
+                    <input class="txtForm" type="text" name="nomeUsuario">
+                </div>
+                <div class="camposCadUsuario">
+                    <label for="loginUsuario">Login: </label>
+                    <input class="txtPequeno" id="txtLogin" type="text" name="loginUsuario">
+                </div>
+                <div class="camposCadUsuario">
+                    <label for="senhaUsuario">Senha: </label>
+                    <input class="txtPequeno" type="text" name="senhaUsuario">
+                </div>
             </div>
             <div id="alerta" class="camposCadUsuario">
                 <label for="alerta"></label>
@@ -196,22 +337,24 @@
         </form>
     </main>
     <footer>
-        <div id="footer2">
-            <figure>
-                <img src="../images/logo2.png" alt="logo" id="logoFooter">
-            </figure>
+        <div class="container--happy--mind">
+            <div id="footer2">
+                <figure>
+                    <img src="../images/logo2.png" alt="logo" id="logoFooter">
+                </figure>
 
-            <address>
-                <img src="../images/email.png" alt="E-mail" id="imgEmail">
-                <a class="socialFooter" href="">: Contato@HappyMind.com</a>
-            </address>
+                <address>
+                    <img src="../images/email.png" alt="E-mail" id="imgEmail">
+                    <a class="socialFooter" href="">: Contato@HappyMind.com</a>
+                </address>
 
-            <address>
-                <img src="../images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
-                <a class="socialFooter" href="">: (13) 99639-6895</a>
-            </address>
+                <address>
+                    <img src="../images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
+                    <a class="socialFooter" href="">: (13) 99639-6895</a>
+                </address>
 
-            <p id="referenciaFooter">Desenvolvido por turma TI-42</p>
+                <p id="referenciaFooter">Desenvolvido por turma TI-42</p>
+            </div>
         </div>
         <p id="avisoFooter">
             ATENÇÃO: Este portal não oferece atendimento de urgência para

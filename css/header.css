@@ -107,7 +107,11 @@ header a {
     background-color: #1d1825;
     overflow: hidden;
     transition: all .8s ease-in-out;
+<<<<<<< HEAD
     padding: 0;
+=======
+    padding: 0px;
+>>>>>>> 864b45926a585620fd18bf3a627d2f373280c5e3
 }
 
 .nav--area li {
