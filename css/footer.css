@@ -1,7 +1,7 @@
 footer {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px 0px;
+    padding: 0rem 2rem 0rem 2rem;
     background-color: #2f2741;
     color: #F5F5FA;
 }
@@ -18,12 +18,16 @@ p {
     font-size: 16px;
 }
 
+.container--happy--mind {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .socialFooter:hover {
     border-bottom: 1px solid royalblue;
     color: royalblue;
 
 }
-
 
 #avisoFooter {
     padding: 20px;
@@ -62,12 +66,20 @@ p {
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 800px) {
+    .container--happy--mind {
+        margin-left: 20%;
+        margin-right: 20%;
+    }    
+}
+
 @media screen and (min-width: 1200px) {
     footer {
         padding: 0rem 5rem 0rem 5rem;
     }
-
-    p {
-        font-size: 1.1rem;
-    }
+    
+    .container--happy--mind {
+        margin-left: 25%;
+        margin-right: 25%;
+    }    
 }
