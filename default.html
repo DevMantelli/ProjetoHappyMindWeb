@@ -244,35 +244,39 @@
             .slogan--container {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-around;
+                height: 100vh;
             }
 
             .img--logo-texto-h1 {
                 position: absolute;
                 width: 30%;
-                transform: translateX(40%);
+                transform: translateX(70%) translateY(100px);
                 top: 5px;
+                z-index: 1;
             }
 
             .bg--image-slogan {
-                width: 40%;
+                width: 35%;
+                padding: 2px;
                 margin: 90px 0px 10px 50px;
             }
 
             .slogan--container-texto {
                 margin-top: 200px;
-                width: 100%;
+                max-width: 50%;
                 text-align: center;
+                z-index: 1;
             }
 
             .slogan--container-texto p {
                 font-size: 2.4rem;
             }
 
-            /*  .slogan--container a {
-                font-size: 1.4rem;
-                width: 30%;
-                padding: 10px;
-            } */
+            .container--saiba-mais {
+                padding: 3rem 0rem 3rem 0rem;
+
+            }
 
             .container--saiba-mais-texto {
                 padding: 0rem 6rem 0rem 6rem;
@@ -292,22 +296,6 @@
             .container--saiba-mais-link a:hover {
                 animation: hoverEffect infinite 2s ease-in-out;
                 transition: all .5s ease-in-out;
-            }
-
-            @keyframes hoverEffect {
-
-                0% {
-                    box-shadow: 0px 0px 10px #27bee7;
-                }
-
-                50% {
-                    box-shadow: 0px 0px 30px #27bee7;
-                }
-
-                100% {
-                    box-shadow: 0px 0px 10px #27bee7;
-                }
-
             }
 
             .container--saiba-mais-link {
@@ -342,6 +330,64 @@
             .slider--controls {
                 max-width: 100%;
             }
+
+            /* ANIMAÇAO DO BOTAO "VENHA CONHECELOS" */
+            @keyframes hoverEffect {
+
+                0% {
+                    box-shadow: 0px 0px 10px #27bee7;
+                }
+
+                50% {
+                    box-shadow: 0px 0px 30px #27bee7;
+                }
+
+                100% {
+                    box-shadow: 0px 0px 10px #27bee7;
+                }
+
+            }
+
+            /* Bolha animaçao  !SOMENTE DESKTOP */
+            .blob--anime {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                position: absolute;
+                transform: translateX(140px) translateY(-170px);
+                background: linear-gradient(35deg, #27bee7, #6226a7fb);
+                animation: blob 14s infinite ease-in-out ;
+            }
+
+            .blob--anime::before {
+                content: '';
+                width: 8rem;
+                height: 8rem;
+                border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                position: absolute;
+                transform: translateX(600px) translateY(300px);
+                background: linear-gradient(305deg, #0d6881, #6226a7fb);
+                animation: blob 10s infinite ease-in-out;
+            }
+
+
+            @keyframes blob {
+                0% {
+                    border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                }
+
+                25% {
+                    border-radius: 27% 73% 37% 63% / 51% 16% 84% 49%;
+                }
+
+                75% {
+                    border-radius: 13% 87% 65% 35% / 17% 63% 37% 83%;
+                }
+
+                100% {
+                    border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                }
+            }
         }
     </style>
 
@@ -354,7 +400,7 @@
         <a href="/default.html"><img class="logo--header" src="/images/Logo--img.png" alt=""></a>
 
         <div class="nav--desktop">
-            <a href="">
+            <a href="/pages/psicologos.html">
                 <p>Psicólogos</p>
             </a>
             <p onclick="logingModal()">Entrar</p>
@@ -366,7 +412,7 @@
             <span class="bnt--mobile-linha-3"></span>
         </div>
         <ul class="nav--area">
-            <li><a href="/pages/cadastro-usuario.html"><i class="bi bi-people-fill"></i>Psicólogos</a></li>
+            <li><a href="/pages/psicologos.html"><i class="bi bi-people-fill"></i>Psicólogos</a></li>
             <li onclick="logingModal()"><i class="bi bi-person-fill"></i> Entrar</li>
         </ul>
 
@@ -400,9 +446,10 @@
             <img class="img--logo-texto-h1" src="/images/Logo--Texto.png" alt="">
             <img class="bg--image-slogan" src="/images/Online page-amico.png" alt="">
             <div class="slogan--container-texto">
-                <p>A HappyMind é um espaço 100% online onde você poderá receber auxílio de profissionais. </p>
+                <p>A HappyMind é um espaço 100% online onde você poderá receber auxílio de profissionais da area da
+                    saúde mental. </p>
             </div>
-
+            <span class="blob--anime"></span>
         </div>
 
         <div class="container--saiba-mais">

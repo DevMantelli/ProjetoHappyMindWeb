@@ -281,9 +281,6 @@ header a {
     display: none;
 }
 
-
-
-
 @media screen and (min-width: 800px) {
     .nav--desktop {
         display: flex;
@@ -354,7 +351,7 @@ header a {
 
 @media screen and (min-width: 1300px) {
     .nav--desktop {
-        width: 40%;
+        width: 25%;
         display: flex;
         justify-content: space-around;
     }
@@ -402,10 +399,37 @@ header a {
     }
 
     .login--card label,
+    .senha--card label {
+        font-size: 2.2rem;
+    }
+
+    .login--card input,
+    .senha--card input {
+        font-size: 2rem;
+    }
+
+    .login--card label,
     .senha--card label,
     .login--card input,
     .senha--card input {
         max-width: 50%;
+    }
+
+    .btn--login-close {
+        width: 80px;
+        height: 50px;
+    }
+
+    .bi-arrow-left {
+        font-size: 1.8rem;
+    }
+
+    .modal--links {
+        font-size: 1.6rem;
+    }
+
+    .modal--login button {
+        font-size: 1.5rem;
     }
 
     .nav--desktop a p {
@@ -420,11 +444,4 @@ header a {
         display: none;
     }
 
-    .modal--links {
-        font-size: 1.3rem;
-    }
-
-    .form--login button{
-        font-size: 1.3rem;
-    }
 }
