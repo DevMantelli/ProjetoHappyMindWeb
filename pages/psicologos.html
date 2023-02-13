@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psicólogos</title>
+    <!-- <link rel="stylesheet" href="estilo.css"> -->
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        *,
+        ::after,
+        ::before {
+            -moz-box-sizing: inherit;
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+
+        /*mobile responsive*/
+        /*body*/
+        body {
+            margin: auto;
+            text-align: justify;
+            background-color: hsl(260, 18%, 10%);
+            height: 1;
+        }
+
+        p,
+        b {
+            color: white;
+        }
+
+        body::-webkit-scrollbar {
+            background-color: hsl(260, 18%, 10%);
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.050);
+        }
+
+        main {
+            font-size: 30px;
+        }
+
+        main {
+            text-align: center;
+            line-height: 20px;
+        }
+
+        main span {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            background-color: #9b98e7;
+            border-radius: 100px;
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        element {
+            display: flex;
+        }
+
+        .botao {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: nome;
+            background-color: #9b98e7;
+            border-radius: 100px;
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        .botaoMais {
+            color: #9b98e7;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .botaoSabia {
+            color: #9b98e7;
+            font-weight: bolder;
+
+        }
+
+        .fa,
+        .fas {
+            font-weight: 900;
+        }
+
+        .fa,
+        .far,
+        .fas {
+            font-family: "Font Awesome 5 Free";
+        }
+
+        .fa,
+        .fab,
+        .fal,
+        .far,
+        .fas {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        }
+
+        .espaco-pequeno {
+            margin-bottom: 30px;
+        }
+
+        .limita_tamanho {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+
+        .espaco-medio {
+            margin-bottom: 50px;
+        }
+
+        .psicologos-wrapper {
+            display: flex;
+            padding: 10px;
+            text-align: left;
+            flex-direction: row;
+
+
+        }
+
+        .psicologos-wrapper .psicologo-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex: 20%;
+            border-radius: 5px;
+            margin: 15px;
+            min-width: 200px;
+            justify-content: space-between;
+            overflow: hidden;
+            transition: background-color .5s ease-out;
+        }
+
+        main a,
+        main a:active,
+        main a:hover,
+        main a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        .psicologos-wrapper .psicologo-wrapper>a {
+            height: 100%;
+        }
+
+        .psicologos-wrapper .psicologo-wrapper .psicologo {
+            position: relative;
+            background-color: #f8f8f8;
+            text-align: center;
+            height: 100%;
+            min-width: 200px;
+            padding: 30px 30px 100px;
+        }
+
+        .psicologos-wrapper .psicologo-wrapper .psicologo {
+            text-align: center;
+        }
+
+        .psicologo-imagem,
+        .psicologos-wrapper .psicologo-wrapper .psicologo .img {
+            border-radius: 50%;
+            width: 100%;
+            max-height: 300px;
+            padding: 0;
+            margin: 0;
+            max-width: 300px;
+            background-color: #46c8ec;
+            overflow: hidden;
+            display: block;
+
+        }
+
+        .psicologos-wrapper .psicologo-wrapper .psicologo .psicologo-nome {
+            margin-top: 20px;
+            text-transform: uppercase;
+            color: #46c8ec;
+            font-weight: 900;
+            font-size: 1.5em;
+        }
+
+        .psicologos-wrapper .psicologo-wrapper .psicologo .psicologo-detalhes {
+            margin-top: 20px;
+            color: #555;
+            font-size: 1.3em;
+        }
+
+        .psicologos-wrapper .psicologo-wrapper .psicologo .psicologo-bot {
+            font-size: 1.3em;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            padding: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .cd-paginacao,
+        .centralizado {
+            text-align: center;
+        }
+
+        main {
+            margin: 0;
+            padding: 0;
+
+            font-size: 15px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        #banner-destaque.banner-psicologos {
+            background-image: url(../Images/banner-psicologos.png);
+        }
+
+        #banner-destaque {
+            min-height: 150px;
+        }
+
+        #banner-destaque {
+            min-height: 350px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            height: 90%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #banner-destaque,
+        .blog-post-img {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        /*img psicologio*/
+        #imgD {
+            border: 2px solid #9b98e7;
+            padding: 5px;
+            border-radius: 500px;
+            width: 60%;
+        }
+
+
+        /*espaçamento entre os navs*/
+        #Conheça .manu-btn:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        /*background do nav*/
+        #Conheça #nav-auto div {
+            border: 2px solid #20a6ff;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        /*background do nav*/
+        #Conheça #nav-auto {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /*espaçamento para o background ficar dentro do nav*/
+        #Conheça #nav-auto div:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        .psicologo-ver-mais-centralizado {
+
+            text-align: center;
+        }
+
+        .detalhes {
+            border: 5px #1d1825 solid;
+            width: 200px;
+            height: 400px;
+            border-radius: 75px;
+            margin: auto;
+
+        }
+
+        .psicologos-wrapper2 {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .psicologos-wrapper-plantao2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+
+        /*tablet responsive*/
+        @media screen and (min-width: 736px) and (max-width: 1049px) {
+
+            main,
+            div.psicologos-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            main h1 #banner-destaque.banner-psicologos {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 10%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+        }
+
+        /*pc responsive*/
+        @media screen and (min-width: 1050px) {
+            .psicologos-wrapper {
+                text-align: center;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            /*main*/
+            main {
+                background-size: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="/default.html"><img class="logo--header" src="/images/Logo--img.png" alt=""></a>
+
+        <div class="nav--desktop">
+            <a href="">
+                <p>Psicólogos</p>
+            </a>
+            <p onclick="logingModal()">Entrar</p>
+        </div>
+
+        <div class="container--nav-btn-mobile" onclick="toggleMenu()">
+            <span class="bnt--mobile-linha-1"></span>
+            <span class="bnt--mobile-linha-2"></span>
+            <span class="bnt--mobile-linha-3"></span>
+        </div>
+        <ul class="nav--area">
+            <li><a href="/pages/cadastro-usuario.html"><i class="bi bi-people-fill"></i>Psicólogos</a></li>
+            <li onclick="logingModal()"><i class="bi bi-person-fill"></i> Entrar</li>
+        </ul>
+
+        <div class="modal--login">
+            <form class="form--login">
+                <div class="back--btn">
+                    <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
+                </div>
+
+                <div class="login--card">
+                    <label for="login">Login </label>
+                    <input type="text">
+                </div>
+                <div class="senha--card">
+                    <label for="">Senha </label>
+                    <input type="password">
+                </div>
+                <div class="modal--links">
+                    <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
+                    <a href="">Esqueci a senha</a>
+                </div>
+                <button>Logar</button>
+            </form>
+        </div>
+
+    </header>
+
+    <h1 id="banner-destaque" class="banner-psicologos">Psicólogos</h1>
+    <main>
+
+        <div class="psicologos-wrapper">
+            <div class="psicologos-wrapper plantao">
+                <div class="psicologo">
+                    <div class="psicologo .img">
+                        <img id="imgD" src="./images/2019-11-08- Mestrado Profissional em Psicologia(1).png" />
+                    </div>
+                    <div class="detalhes">
+                        <div class="psicologo-nome">
+                            <p>Silva de ferriea</p>
+
+                            <div class="psicologo-detalhes">
+                                <p><b>Estado:</b>SP</p>
+                                <p><b>CRP</b>04/5588</p>
+                                <p><b>Psicologia Infantojuvenil</b></p>
+                                <br>
+                                <p>
+                                    <a href="perfil.html">
+                                        <span class="disponivel">Disponível agora!</span>
+                                    </a>
+                                </p>
+
+                            </div>
+                            <div class="psicologo-bot">
+                                <div class="bot-wrapper">
+                                    <p>A partir de: <b>R$40,00</b></p>
+                                    <br />
+                                    <br />
+                                    <a href="perfil.html">
+                                        <div class="botaoSabia">Sabia mais</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="psicologos-wrapper plantao">
+                    <div class="psicologo">
+                        <div class="psicologo .img">
+                            <img id="imgD" src="./images/pngegg.png">
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
+                                <p>Eduardo Santos</p>
+                            </div>
+                            <div class="psicologo-detalhes">
+                                <p><b>Estado:</b>SP</p>
+                                <p><b>CRP</b>04/5588</p>
+                                <p><b>Psicologia Clínica e Traumas</b></p>
+                                <br />
+                                <p>
+                                    <a href="perfil.html">
+                                        <span class="disponivel">Disponível agora!</span>
+                                    </a>
+                                </p>
+
+                            </div>
+                            <div class="psicologo-bot">
+                                <div class="bot-wrapper">
+                                    <p>A partir de: <b>R$60,00</b></p>
+                                    <br />
+                                    <br />
+                                    <a href="perfil.html">
+                                        <div class="botaoSabia">Sabia mais</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="psicologos-wrapper plantao">
+                    <div class="psicologo">
+                        <div class="psicologo .img">
+                            <img id="imgD" src="./images/pngegg (1).png">
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
+                                <p>Sergio Almeida</p>
+                            </div>
+                            <div class="psicologo-detalhes">
+                                <p><b>Estado:</b>SP</p>
+                                <p><b>CRP</b>04/5588</p>
+                                <p><b>Psicologia Clínica e Traumas</b></p>
+                                <br />
+                                <p>
+                                    <a href="perfil.aspx">
+                                        <span class="disponivel">Disponível agora!</span>
+                                    </a>
+                                </p>
+
+                            </div>
+                            <div class="psicologo-bot">
+                                <div class="bot-wrapper">
+                                    <p>A partir de: <b>R$60,00</b></p>
+                                    <br />
+                                    <br />
+                                    <a href="perfil.html">
+                                        <div class="botaoSabia">Sabia mais</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="psicologos-wrapper plantao">
+                    <div class="psicologo">
+                        <div class="psicologo .img">
+                            <img id="imgD" src="./images/pngegg (1).png">
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
+                                <p>Sergio Almeida</p>
+                            </div>
+                            <div class="psicologo-detalhes">
+                                <p><b>Estado:</b>SP</p>
+                                <p><b>CRP</b>04/5588</p>
+                                <p><b>Psicologia Clínica e Traumas</b></p>
+                                <br />
+                                <p>
+                                    <a href="perfil.aspx">
+                                        <span class="disponivel">Disponível agora!</span>
+                                    </a>
+                                </p>
+
+                            </div>
+                            <div class="psicologo-bot">
+                                <div class="bot-wrapper">
+                                    <p>A partir de: <b>R$60,00</b></p>
+                                    <br />
+                                    <br />
+                                    <a href="perfil.html">
+                                        <div class="botaoSabia">Sabia mais</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="psicologos-wrapper2">
+                    <div class="psicologos-wrapper-plantao2">
+                        <div class="psicologo">
+                            <div class="psicologo .img">
+                                <img id="imgD" src="./images/pngegg (1).png">
+                            </div>
+                            <div class="detalhes">
+                                <div class="psicologo-nome">
+                                    <p>Sergio Almeida</p>
+                                </div>
+                                <div class="psicologo-detalhes">
+                                    <p><b>Estado:</b>SP</p>
+                                    <p><b>CRP</b>04/5588</p>
+                                    <p><b>Psicologia Clínica e Traumas</b></p>
+                                    <br />
+                                    <p>
+                                        <a href="perfil.aspx">
+                                            <span class="disponivel">Disponível agora!</span>
+                                        </a>
+                                    </p>
+
+                                </div>
+                                <div class="psicologo-bot">
+                                    <div class="bot-wrapper">
+                                        <p>A partir de: <b>R$60,00</b></p>
+                                        <br />
+                                        <br />
+                                        <a href="perfil.html">
+                                            <div class="botaoSabia">Sabia mais</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+    </main>
+    <div class="psicologo-ver-mais-centralizado">
+        <button class="botaoMais">Carregar mais psicólogos</button>
+    </div>
+    <footer>
+        <div id="footer2">
+            <figure>
+                <img src="../images/logo2.png" alt="logo" id="logoFooter">
+            </figure>
+
+            <address>
+                <img src="../images/email.png" alt="E-mail" id="imgEmail">
+                <a class="socialFooter" href="">: Contato@HappyMind.com</a>
+            </address>
+
+            <address>
+                <img src="../images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
+                <a class="socialFooter" href="">: (13) 99639-6895</a>
+            </address>
+
+            <p id="referenciaFooter">Desenvolvido por turma TI-42</p>
+        </div>
+        <p id="avisoFooter">
+            ATENÇÃO: Este portal não oferece atendimento de urgência para
+            casos relacionados a crises suicidas. Nestes casos, entre em
+            contato gratuitamente com o CVV (Centro de Valorização da Vida)
+            pelo telefone 188 ou acesse www.cvv.org.br. Em caso de
+            emergências, busque o hospital mais próximo ou ligue 192
+            (SAMU).
+        </p>
+    </footer>
+
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/login-modal.js"></script>
+</body>
+
+</html>
