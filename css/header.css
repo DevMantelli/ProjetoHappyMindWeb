@@ -370,10 +370,11 @@ header a {
     .nav--desktop p:nth-child(2) {
         border-radius: 10px;
         width: 150px;
-        background-color: #362e49;
+        background-color: #27bee7;
         display: flex;
         justify-content: center;
         text-align: center;
+        color: #362e49;
     }
 
     .form--login {
