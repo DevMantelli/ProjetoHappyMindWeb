@@ -164,7 +164,7 @@ header a {
     width: 80%;
     height: 80%;
     border-radius: 20px;
-    background-color: #1d1825;
+    background-color: #231c30;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,7 +176,7 @@ header a {
 .login--card,
 .senha--card {
     width: 100%;
-    height: 20%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,42 +199,49 @@ header a {
 
 .login--card input,
 .senha--card input {
-    padding: 10px;
+    padding: 13px;
     border-radius: 7px;
     border: none;
     outline: none;
     font-size: 1.1rem;
-    background-color: #362e49;
     color: rgb(207, 207, 207);
+    background-color: #514869;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.form--login input:focus{
+    border-bottom: #27bee7 3px solid;
 }
 
 
 .login--card label,
 .senha--card label {
-    color: #27bee7;
+    color: #27c7f3;
     padding: 2px;
+    margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
 /* BOTAO CARD LOGIN */
 .modal--login button {
     margin-top: 30px;
-    width: 30%;
-    padding: 8px;
+    width: 40%;
+    padding: 13px 15px 13px 15px;
     outline: none;
     border: none;
     border-radius: 10px;
-    color: #27bee7;
+    color: #362e49;
     font-weight: 600;
-    background-color: #362e49;
+    background-color: #27bee7;
     cursor: pointer;
     transform: translateY(-120px);
+    font-size: 1.1rem;
 }
 
 /* MODAL BOTAO DE VOLTAR */
 .btn--login-close {
-    width: 50px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     font-size: 1.1rem;
     color: #27bee7;
     border-radius: 10px;
@@ -262,6 +269,7 @@ header a {
     justify-content: center;
     margin-top: 20px;
     transform: translateY(-90px);
+    font-size: 1.2rem;
 }
 
 .modal--links a {
@@ -282,6 +290,13 @@ header a {
 }
 
 @media screen and (min-width: 800px) {
+
+    .modal--login {
+
+        background-color: #201b2cd3;
+
+    }
+
     .nav--desktop {
         display: flex;
         margin-right: 50px;
@@ -310,10 +325,11 @@ header a {
         padding: 0;
         font-size: 1.6rem;
         font-weight: 600;
-        color: #27bee7;
+        color: #362e49;
         cursor: pointer;
         border-radius: 5px;
-        background-color: #362e49;
+        background-color: #27bee7;
+
         margin: 0;
     }
 
@@ -321,22 +337,50 @@ header a {
         width: 60%;
         height: 80%;
         border-radius: 20px;
-        background-color: #1d1825;
+        background-color: #231c30;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-
+        box-shadow: 0px 10px 40px #00000056;
     }
 
     .login--card,
     .senha--card {
         width: 100%;
-        height: 20%;
+        height: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .login--card input,
+    .senha--card input {
+        padding: 13px;
+        background-color: #514869;
+        border-radius: 10px;
+        box-shadow: 0px 10px 40px #00000056;
+    }
+
+    .form--login button {
+        width: 45%;
+        background-color: #3cc6ec;
+        padding: 12px 15px 12px 15px;
+        color: #2f2741;
+        font-weight: 900;
+        letter-spacing: 2px;
+        font-size: 1rem;
+    }
+
+    .login--card label,
+    .senha--card label {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .modal--links {
+        font-size: 1.1rem;
     }
 
     .container--nav-btn-mobile {
@@ -381,7 +425,7 @@ header a {
         max-width: 50%;
         height: 80%;
         border-radius: 20px;
-        background-color: #1d1825;
+        background-color: #231c30;
         display: flex;
         justify-content: space-between;
         align-items: center;
