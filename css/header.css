@@ -107,14 +107,25 @@ header a {
     background-color: #1d1825;
     overflow: hidden;
     transition: all .8s ease-in-out;
+    padding: 0;
     padding: 0px;
+
 }
 
 .nav--area li {
-    margin-top: 20px;
-    width: 80%;
+    margin-top: 50px;
+    max-width: 80%;
     list-style: none;
     text-align: center;
+}
+
+.nav--area li:nth-child(2) {
+    color: #27bee7;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0;
+    cursor: pointer;
 }
 
 .nav--area li a {
@@ -138,35 +149,43 @@ header a {
 .modal--login {
     position: fixed;
     width: 100%;
-    height: 80%;
-    transform: translateY(60%);
+    height: 100%;
+    top: 0;
+    background-color: #362e49ce;
     display: none;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transition: all .7s ease-in-out;
 }
 
 /* FORM DA TELA LOGIN */
-form {
+.form--login {
     width: 80%;
     height: 80%;
     border-radius: 20px;
-    background-color: #1d1825;
+    background-color: #231c30;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
 }
 
 /* CARDS LOGIN E SENHA */
 .login--card,
 .senha--card {
-    width: 80%;
-    height: 20%;
+    width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
+/* SUBINDO CARD SENHA */
+.senha--card {
+    transform: translateY(-50px);
 }
 
 /* INPUTS E LABELS DO CARD LOGIN */
@@ -174,86 +193,131 @@ form {
 .senha--card label,
 .login--card input,
 .senha--card input {
-    width: 60%;
+    width: 70%;
 
 }
 
 .login--card input,
 .senha--card input {
-    padding: 10px;
+    padding: 13px;
     border-radius: 7px;
     border: none;
     outline: none;
     font-size: 1.1rem;
+    color: rgb(207, 207, 207);
+    background-color: #514869;
+    box-shadow: 0px 10px 40px #00000056;
 }
+
+.form--login input:focus{
+    border-bottom: #27bee7 3px solid;
+}
+
 
 .login--card label,
 .senha--card label {
-    color: #27bee7;
+    color: #27c7f3;
     padding: 2px;
+    margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
 /* BOTAO CARD LOGIN */
 .modal--login button {
     margin-top: 30px;
-    width: 30%;
-    padding: 8px;
+    width: 40%;
+    padding: 13px 15px 13px 15px;
     outline: none;
     border: none;
     border-radius: 10px;
-    color: #27bee7;
+    color: #362e49;
     font-weight: 600;
-    background-color: #362e49;
+    background-color: #27bee7;
     cursor: pointer;
+    transform: translateY(-120px);
+    font-size: 1.1rem;
 }
 
 /* MODAL BOTAO DE VOLTAR */
-.btn--login-close{
-    width: 50px;
-    height: 30px;
+.btn--login-close {
+    width: 60px;
+    height: 40px;
     font-size: 1.1rem;
     color: #27bee7;
     border-radius: 10px;
     padding: 2px;
     background-color: #362e49;
     text-align: center;
-    position: absolute;
-    top: 70px;
-    left: 70px;
     cursor: pointer;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 15px;
+}
+
+.back--btn {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
 }
 
 /* LINK ESQUECI SENHA E CADASTRO */
-.modal--links{
+.modal--links {
     width: 80%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    transform: translateY(-90px);
+    font-size: 1.2rem;
 }
 
-.modal--links a{
-    max-width: 40%;
-    margin: 0px 20px 0px 0px;
+.modal--links a {
+    max-width: 100%;
+    margin: 0px 40px 0px 0px;
+    color: #3cc6ec;
+}
+
+.modal--links a:nth-child(2) {
+    max-width: 100%;
+    margin: 0;
     color: #3cc6ec;
 }
 
 /* CLASS PARA ATIVAR O MODEL LOGIN */
-.active--modal{
+.active--modal {
     display: none;
 }
 
-
 @media screen and (min-width: 800px) {
+
+    .modal--login {
+
+        background-color: #201b2cd3;
+
+    }
+
     .nav--desktop {
         display: flex;
         margin-right: 50px;
+        width: 40%;
+        justify-content: space-around;
     }
 
-    .nav--desktop a {
+    .nav--desktop a,
+    .nav--desktop p {
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #27bee7;
+
+    }
+
+    .nav--desktop p:nth-child(2) {
         width: 120px;
         height: 40px;
         display: flex;
@@ -261,10 +325,63 @@ form {
         padding: 0;
         font-size: 1.6rem;
         font-weight: 600;
-        color: #27bee7;
+        color: #362e49;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #27bee7;
+
+        margin: 0;
     }
 
+    .form--login {
+        width: 60%;
+        height: 80%;
+        border-radius: 20px;
+        background-color: #231c30;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 10px 40px #00000056;
+    }
 
+    .login--card,
+    .senha--card {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login--card input,
+    .senha--card input {
+        padding: 13px;
+        background-color: #514869;
+        border-radius: 10px;
+        box-shadow: 0px 10px 40px #00000056;
+    }
+
+    .form--login button {
+        width: 45%;
+        background-color: #3cc6ec;
+        padding: 12px 15px 12px 15px;
+        color: #2f2741;
+        font-weight: 900;
+        letter-spacing: 2px;
+        font-size: 1rem;
+    }
+
+    .login--card label,
+    .senha--card label {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .modal--links {
+        font-size: 1.1rem;
+    }
 
     .container--nav-btn-mobile {
         display: none;
@@ -278,14 +395,13 @@ form {
 
 @media screen and (min-width: 1300px) {
     .nav--desktop {
-        width: 30%;
+        width: 25%;
         display: flex;
-        justify-content: space-evenly;
-
+        justify-content: space-around;
     }
 
     .nav--desktop a {
-        width: 100%;
+        width: 120px;
         height: 40px;
         display: flex;
         justify-content: center;
@@ -295,14 +411,71 @@ form {
         color: #27bee7;
     }
 
-    .nav--desktop a:nth-child(2) p {
+    .nav--desktop p:nth-child(2) {
         border-radius: 10px;
-        width: 70%;
-        padding: 5px;
-        background-color: #362e49;
+        width: 150px;
+        background-color: #27bee7;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        color: #362e49;
     }
 
+    .form--login {
+        max-width: 50%;
+        height: 80%;
+        border-radius: 20px;
+        background-color: #231c30;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .login--card,
+    .senha--card {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login--card label,
+    .senha--card label {
+        font-size: 2.2rem;
+    }
+
+    .login--card input,
+    .senha--card input {
+        font-size: 2rem;
+    }
+
+    .login--card label,
+    .senha--card label,
+    .login--card input,
+    .senha--card input {
+        max-width: 50%;
+    }
+
+    .btn--login-close {
+        width: 80px;
+        height: 50px;
+    }
+
+    .bi-arrow-left {
+        font-size: 1.8rem;
+    }
+
+    .modal--links {
+        font-size: 1.6rem;
+    }
+
+    .modal--login button {
+        font-size: 1.5rem;
+    }
 
     .nav--desktop a p {
         font-size: 2rem;

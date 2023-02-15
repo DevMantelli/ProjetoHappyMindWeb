@@ -41,7 +41,7 @@
 
         }
 
-        main {
+        .main--container-default {
             background-color: var(--bg-cor);
             display: flex;
             justify-content: center;
@@ -157,6 +157,7 @@
             border-top-right-radius: 80px;
         }
 
+        /* TAMANHAO DO SLIDE */
         .slider--width {
             width: 100%;
             height: 100%;
@@ -164,6 +165,7 @@
             transition: all ease 0.3s;
         }
 
+        /* ITEM DENTRO DO SLIDE */
         .slider--item {
             width: 100vw;
             height: inherit;
@@ -178,17 +180,14 @@
             font-size: 1rem;
             text-align: center;
             padding: 0rem 5rem 0rem 5rem;
+
         }
 
         .slider--item h2 {
             margin-bottom: 30px;
         }
 
-        .slider--item img {
-            width: 300px;
-            height: 100px;
-        }
-
+        /* CONTROLES DO SLIDE */
         .slider--controls {
             position: absolute;
             z-index: 99;
@@ -248,35 +247,45 @@
             .slogan--container {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-around;
+                height: 100vh;
+                background-image: url(/images/Wavetop.svg);
+                background-position: 0px 350px;
+                
+                background-size: 100vw;
+                background-repeat: no-repeat;
+                border-radius: 0px;
             }
 
             .img--logo-texto-h1 {
                 position: absolute;
                 width: 30%;
-                transform: translateX(40%);
+                transform: translateX(70%) translateY(100px);
                 top: 5px;
+                z-index: 1;
             }
 
             .bg--image-slogan {
-                width: 40%;
+                width: 35%;
+                padding: 2px;
                 margin: 90px 0px 10px 50px;
             }
 
             .slogan--container-texto {
                 margin-top: 200px;
-                width: 100%;
+                max-width: 50%;
                 text-align: center;
+                z-index: 1;
             }
 
             .slogan--container-texto p {
                 font-size: 2.4rem;
             }
 
-            /*  .slogan--container a {
-                font-size: 1.4rem;
-                width: 30%;
-                padding: 10px;
-            } */
+            .container--saiba-mais {
+                padding: 3rem 0rem 3rem 0rem;
+
+            }
 
             .container--saiba-mais-texto {
                 padding: 0rem 6rem 0rem 6rem;
@@ -298,22 +307,6 @@
                 transition: all .5s ease-in-out;
             }
 
-            @keyframes hoverEffect {
-
-                0% {
-                    box-shadow: 0px 0px 10px #27bee7;
-                }
-
-                50% {
-                    box-shadow: 0px 0px 30px #27bee7;
-                }
-
-                100% {
-                    box-shadow: 0px 0px 10px #27bee7;
-                }
-
-            }
-
             .container--saiba-mais-link {
                 justify-content: center;
                 width: 100%;
@@ -321,6 +314,18 @@
 
             .container--saiba-mais-link img {
                 margin-left: 10rem;
+            }
+
+            .senha--card{
+                margin-top: 20px;
+            }
+
+            .slider{
+                background-image: url(/images/Wavebot.svg);
+                background-position: 0px -660px;
+                background-repeat: no-repeat;
+                background-size: 100vw;
+                border-radius: 0;
             }
 
             .img--logo-side {
@@ -346,6 +351,64 @@
             .slider--controls {
                 max-width: 100%;
             }
+
+            /* ANIMAÇAO DO BOTAO "VENHA CONHECELOS" */
+            @keyframes hoverEffect {
+
+                0% {
+                    box-shadow: 0px 0px 10px #27bee7;
+                }
+
+                50% {
+                    box-shadow: 0px 0px 30px #27bee7;
+                }
+
+                100% {
+                    box-shadow: 0px 0px 10px #27bee7;
+                }
+
+            }
+
+            /* Bolha animaçao  !SOMENTE DESKTOP */
+            .blob--anime {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                position: absolute;
+                transform: translateX(140px) translateY(-170px);
+                background: linear-gradient(35deg, #27bee7, #6226a7fb);
+                animation: blob 14s infinite ease-in-out ;
+            }
+
+            .blob--anime::before {
+                content: '';
+                width: 8rem;
+                height: 8rem;
+                border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                position: absolute;
+                transform: translateX(600px) translateY(300px);
+                background: linear-gradient(305deg, #0d6881, #6226a7fb);
+                animation: blob 10s infinite ease-in-out;
+            }
+
+
+            @keyframes blob {
+                0% {
+                    border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                }
+
+                25% {
+                    border-radius: 27% 73% 37% 63% / 51% 16% 84% 49%;
+                }
+
+                75% {
+                    border-radius: 13% 87% 65% 35% / 17% 63% 37% 83%;
+                }
+
+                100% {
+                    border-radius: 28% 72% 78% 22% / 58% 24% 76% 42%;
+                }
+            } 
         }
     </style>
 
@@ -356,13 +419,12 @@
     <header>
 
         <a href="/default.html"><img class="logo--header" src="/images/Logo--img.png" alt=""></a>
+
         <div class="nav--desktop">
-            <a href="">
+            <a href="/pages/psicologos.html">
                 <p>Psicólogos</p>
             </a>
-            <a href="">
-                <p>Usuário</p>
-            </a>
+            <p onclick="logingModal()">Entrar</p>
         </div>
 
         <div class="container--nav-btn-mobile" onclick="toggleMenu()">
@@ -371,23 +433,26 @@
             <span class="bnt--mobile-linha-3"></span>
         </div>
         <ul class="nav--area">
-            <li><a href="">Psicólogos</a></li>
-            <li onclick="logingModal()">Usuário</li>
+            <li><a href="/pages/psicologos.html">Psicólogos</a></li>
+            <li onclick="logingModal()">Entrar</li>
         </ul>
 
         <div class="modal--login">
-            <form>
-                <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
+            <form class="form--login">
+                <div class="back--btn">
+                    <span class="btn--login-close" onclick="bntBack()"><i class="bi bi-arrow-left"></i></span>
+                </div>
+
                 <div class="login--card">
-                    <label for="login">Login </label>
+                    <label for="login">Usuário</label>
                     <input type="text">
                 </div>
                 <div class="senha--card">
-                    <label for="">Senha </label>
-                    <input type="text">
+                    <label for="">Senha</label>
+                    <input type="password">
                 </div>
                 <div class="modal--links">
-                    <a href="">Cadastre-se</a>
+                    <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
                     <a href="">Esqueci a senha</a>
                 </div>
                 <button>Logar</button>
@@ -396,7 +461,7 @@
 
     </header>
 
-    <main>
+    <main class="main--container-default">
 
         <div class="slogan--container">
             <img class="img--logo-texto-h1" src="/images/Logo--Texto.png" alt="">
@@ -404,9 +469,8 @@
             <div class="slogan--container-texto">
                 <p>A HappyMind é um espaço 100% online onde você poderá receber auxílio de profissionais da area da
                     saúde mental. </p>
-
             </div>
-
+            <span class="blob--anime"></span>
         </div>
 
         <div class="container--saiba-mais">
@@ -421,7 +485,7 @@
                 </p>
             </div>
             <div class="container--saiba-mais-link">
-                <a href="">Venha Conhecê-los</a>
+                <a href="/pages/psicologos.html">Venha Conhecê-los</a>
                 <img class="img--logo-side" src="/images/Psychologist-rafiki.png" alt="">
             </div>
         </div>
