@@ -70,6 +70,7 @@ namespace Happy_Mind.classes
 
                 conexao.Open();
                 leitor = cmd.ExecuteReader();
+                conexao.Close();
 
                 if (leitor.HasRows)
                 {
@@ -79,7 +80,7 @@ namespace Happy_Mind.classes
                 {
                     return "Email ou senha incorretos!!!";
                 }
-                conexao.Close();
+                
             }
             catch (SqlException)
             {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="horarios.aspx.cs" Inherits="ProjetoHappyMind.pages.horarios" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="horarios.aspx.cs" Inherits="ProjetoHappyMind.assets.pages.horarios" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 

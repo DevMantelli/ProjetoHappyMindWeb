@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="perfil-psicologo.aspx.cs" Inherits="ProjetoHappyMind.pages.perfil_psicologo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="perfil-psicologo.aspx.cs" Inherits="ProjetoHappyMind.assets.pages.perfil_psicologo" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -177,7 +177,7 @@
                 </div>
                 <div class="modal--links">
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
-                    <a href="">Esqueci a senha</a>
+                    <a href="/">Esqueci a senha</a>
                 </div>
                 <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" />
             </form>
@@ -210,17 +210,17 @@
     <footer>
         <div id="footer2">
             <figure>
-                <img src="../images/logo2.png" alt="logo" id="logoFooter">
+                <img src="../assets/images/logo2.png" alt="logo" id="logoFooter">
             </figure>
 
             <address>
-                <img src="../images/email.png" alt="E-mail" id="imgEmail">
-                <a class="socialFooter" href="">: Contato@HappyMind.com</a>
+                <img src="../assets/images/email.png" alt="E-mail" id="imgEmail">
+                <a class="socialFooter" href="/">: Contato@HappyMind.com</a>
             </address>
 
             <address>
-                <img src="../images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
-                <a class="socialFooter" href="">: (13) 99639-6895</a>
+                <img src="../assets/images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
+                <a class="socialFooter" href="/">: (13) 99639-6895</a>
             </address>
 
             <p id="referenciaFooter">Desenvolvido por turma TI-42</p>

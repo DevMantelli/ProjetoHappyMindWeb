@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>psicólogos</title>
     <!-- <link rel="stylesheet" href="estilo.css"> -->
-    <link rel="stylesheet" href="../assets/css/footer.css"/>
-    <link rel="stylesheet" href="../assets/css/header.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
     <style>
         *,
         ::after,
@@ -66,7 +67,7 @@
 
         .botao {
             color: rgba(255, 255, 255, 0.9);
-            text-decoration: nome;
+            text-decoration: none;
             background-color: #9b98e7;
             border-radius: 100px;
             padding: 10px;
@@ -389,7 +390,7 @@
                 </div>
                 <div class="modal--links">
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
-                    <a href="">Esqueci a senha</a>
+                    <a href="/">Esqueci a senha</a>
                 </div>
                 <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" />
             </form>
@@ -405,31 +406,29 @@
                 <div class="psicologos-wrapper">
                     <div class="psicologo">
                         <div class="psicologo .img">
-                            <img id="imgD" src="/images/LuizaPsicologa.png" />
+                            <asp:Image ID="Image1" runat="server" ImageUrl="../assets/images/LuizaPsicologa.png" />
                         </div>
                         <div class="detalhes">
                             <div class="psicologo-nome">
-                                <p>Silva de ferreira</p>
+
+                                <asp:Label ID="txtBoxNome1" runat="server">Silva Ferreira</asp:Label>
 
                                 <div class="psicologo-detalhes">
-                                    <p><b>Estado:</b>SP</p>
-                                    <p><b>CRP</b>04/5588</p>
-                                    <p><b>Psicologia Infantojuvenil</b></p>
-                                    <br>
-                                    <p>
-                                        <a href="perfil.html">
-                                            <span class="disponivel">Disponível agora!</span>
-                                        </a>
-                                    </p>
+                                    <asp:Label ID="txtBoxDescricao1" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID=" txtBoxTelefone1" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxNotaC1" runat="server" Text="none"></asp:Label>
+
+                                   <asp:Button ID="btn" runat="server" Text="Disponível Agora"/>
 
                                 </div>
+
                                 <div class="psicologo-bot">
                                     <div class="bot-wrapper">
                                         <p>A partir de: <b>R$40,00</b></p>
                                         <br />
                                         <br />
                                         <a href="perfil.html">
-                                            <div class="botaoSabia">Sabia mais</div>
+                                     <div class="botaoSabia">Sabia mais </div>
                                         </a>
                                     </div>
                                 </div>
@@ -440,22 +439,19 @@
                     <div class="psicologos-wrapper plantao">
                         <div class="psicologo">
                             <div class="psicologo .img">
-                                <img id="imgD" src="./images/pngegg.png">
-                            </div>
-                            <div class="detalhes">
-                                <div class="psicologo-nome">
-                                    <p>Eduardo Santos</p>
-                                </div>
+                            <asp:Image ID="Image2" runat="server" ImageUrl="../assets/images/LuizaPsicologa.png" />
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
+
+                                <asp:Label ID="Label1" runat="server">Marcos Roberto</asp:Label>
+
                                 <div class="psicologo-detalhes">
-                                    <p><b>Estado:</b>SP</p>
-                                    <p><b>CRP</b>04/5588</p>
-                                    <p><b>Psicologia Clínica e Traumas</b></p>
-                                    <br />
-                                    <p>
-                                        <a href="perfil.html">
-                                            <span class="disponivel">Disponível agora!</span>
-                                        </a>
-                                    </p>
+                                    <asp:Label ID="Label2" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label3" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label4" runat="server" Text="none"></asp:Label>
+
+                                   <asp:Button ID="Button1" runat="server" Text="Disponível Agora" />
 
                                 </div>
                                 <div class="psicologo-bot">
@@ -474,23 +470,20 @@
 
                     <div class="psicologos-wrapper plantao">
                         <div class="psicologo">
-                            <div class="psicologo .img">
-                                <img id="imgD" src="./images/pngegg (1).png">
-                            </div>
-                            <div class="detalhes">
-                                <div class="psicologo-nome">
-                                    <p>Sergio Almeida</p>
-                                </div>
+                           <div class="psicologo .img">
+                            <asp:Image ID="Image3" runat="server" ImageUrl="../assets/images/LuizaPsicologa.png" />
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
+
+                                <asp:Label ID="Label5" runat="server">Julio Cesar</asp:Label>
+
                                 <div class="psicologo-detalhes">
-                                    <p><b>Estado:</b>SP</p>
-                                    <p><b>CRP</b>04/5588</p>
-                                    <p><b>Psicologia Clínica e Traumas</b></p>
-                                    <br />
-                                    <p>
-                                        <a href="perfil.aspx">
-                                            <span class="disponivel">Disponível agora!</span>
-                                        </a>
-                                    </p>
+                                    <asp:Label ID="Label6" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label7" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label8" runat="server" Text="none"></asp:Label>
+
+                                   <asp:Button ID="Button2" runat="server" Text="Disponível Agora"/>
 
                                 </div>
                                 <div class="psicologo-bot">
@@ -509,23 +502,20 @@
 
                     <div class="psicologos-wrapper plantao">
                         <div class="psicologo">
-                            <div class="psicologo .img">
-                                <img id="imgD" src="./images/pngegg (1).png">
-                            </div>
-                            <div class="detalhes">
-                                <div class="psicologo-nome">
-                                    <p>Sergio Almeida</p>
-                                </div>
+                           <div class="psicologo .img">
+                            <asp:Image ID="Image4" runat="server" ImageUrl="../assets/images/LuizaPsicologa.png" />
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
+
+                                <asp:Label ID="Label9" runat="server">Maria Silva</asp:Label>
+
                                 <div class="psicologo-detalhes">
-                                    <p><b>Estado:</b>SP</p>
-                                    <p><b>CRP</b>04/5588</p>
-                                    <p><b>Psicologia Clínica e Traumas</b></p>
-                                    <br />
-                                    <p>
-                                        <a href="perfil.aspx">
-                                            <span class="disponivel">Disponível agora!</span>
-                                        </a>
-                                    </p>
+                                    <asp:Label ID="Label10" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label11" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label12" runat="server" Text="none"></asp:Label>
+
+                                   <asp:Button ID="Button3" runat="server" Text="Disponível Agora"/>
 
                                 </div>
                                 <div class="psicologo-bot">
@@ -546,24 +536,21 @@
                         <div class="psicologos-wrapper-plantao2">
                             <div class="psicologo">
                                 <div class="psicologo .img">
-                                    <img id="imgD" src="./images/pngegg (1).png">
-                                </div>
-                                <div class="detalhes">
-                                    <div class="psicologo-nome">
-                                        <p>Sergio Almeida</p>
-                                    </div>
-                                    <div class="psicologo-detalhes">
-                                        <p><b>Estado:</b>SP</p>
-                                        <p><b>CRP</b>04/5588</p>
-                                        <p><b>Psicologia Clínica e Traumas</b></p>
-                                        <br />
-                                        <p>
-                                            <a href="perfil.aspx">
-                                                <span class="disponivel">Disponível agora!</span>
-                                            </a>
-                                        </p>
+                            <asp:Image ID="Image5" runat="server" ImageUrl="../assets/images/LuizaPsicologa.png" />
+                        </div>
+                        <div class="detalhes">
+                            <div class="psicologo-nome">
 
-                                    </div>
+                                <asp:Label ID="Label13" runat="server">julia Americana</asp:Label>
+
+                                <div class="psicologo-detalhes">
+                                    <asp:Label ID="Label14" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label15" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="Label16" runat="server" Text="none"></asp:Label>
+
+                                   <asp:Button ID="Button4" runat="server" Text="Disponível Agora"/>
+
+                                </div>
                                     <div class="psicologo-bot">
                                         <div class="bot-wrapper">
                                             <p>A partir de: <b>R$60,00</b></p>

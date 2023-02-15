@@ -10,8 +10,7 @@ namespace Happy_Mind.pages
 {
     public partial class horarios : System.Web.UI.Page
     {
-        public object Button1 { get; private set; }
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["data"] = Request.QueryString["data"];

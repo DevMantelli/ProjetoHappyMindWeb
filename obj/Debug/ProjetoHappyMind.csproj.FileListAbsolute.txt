@@ -57,3 +57,7 @@ C:\Users\yitzhak.brodrigues\source\repos\ProjetoHappyMind\obj\Debug\ProjetoHappy
 C:\Users\yitzhak.brodrigues\source\repos\ProjetoHappyMind\obj\Debug\ProjetoHappyMind.csproj.CopyComplete
 C:\Users\yitzhak.brodrigues\source\repos\ProjetoHappyMind\obj\Debug\ProjetoHappyMind.dll
 C:\Users\yitzhak.brodrigues\source\repos\ProjetoHappyMind\obj\Debug\ProjetoHappyMind.pdb
+D:\Github\ProjetoHappyMindWeb-main\obj\Debug\ProjetoHappyMind.csproj.AssemblyReference.cache
+D:\Github\ProjetoHappyMindWeb-main\obj\Debug\ProjetoHappyMind.csproj.CoreCompileInputs.cache
+D:\Github\ProjetoHappyMindWeb-main\obj\Debug\ProjetoHappyMind.dll
+D:\Github\ProjetoHappyMindWeb-main\obj\Debug\ProjetoHappyMind.pdb

@@ -408,7 +408,7 @@
     </style>
 
 </head>
-<asp:Button runat="server" Text="Button" />
+
 <body>
     <header>
         <a href="/default.html">
@@ -447,9 +447,9 @@
                 </div>
                 <div class="modal--links">
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
-                    <a href="">Esqueci a senha</a>
+                    <a href="/">Esqueci a senha</a>
                 </div>
-                <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" />
+                <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" OnClick="BtnLogar_Click"/>
             </form>
         </div>
 

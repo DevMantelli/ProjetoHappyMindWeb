@@ -10,6 +10,8 @@ namespace Happy_Mind.pages
 {
     public partial class psicologos : System.Web.UI.Page
     {
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             psicologo psicologos = new psicologo();
