@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>psicólogos</title>
     <!-- <link rel="stylesheet" href="estilo.css"> -->
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/footer.css"/>
+    <link rel="stylesheet" href="../assets/css/header.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
     <style>
         *,
         ::after,
@@ -381,11 +381,11 @@
 
                 <div class="login--card">
                     <asp:Label for="login" runat="server">Usuário</asp:Label>
-                    <asp:TextBox id="txtLogin" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox>
                 </div>
                 <div class="senha--card">
                     <asp:Label for="senha" runat="server">Senha</asp:Label>
-                    <asp:TextBox id="txtSenha" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
                 </div>
                 <div class="modal--links">
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
@@ -401,149 +401,78 @@
     <main>
 
         <form runat="server">
-        <div class="psicologos-wrapper">
             <div class="psicologos-wrapper">
-                <div class="psicologo">
-                    <div class="psicologo .img">
-                        <img id="imgD" src="/images/LuizaPsicologa.png" />
-                    </div>
-                    <div class="detalhes">
-                        <div class="psicologo-nome">
-                            <p>Silva de ferriea</p>
-
-                            <div class="psicologo-detalhes">
-                                <p><b>Estado:</b>SP</p>
-                                <p><b>CRP</b>04/5588</p>
-                                <p><b>Psicologia Infantojuvenil</b></p>
-                                <br>
-                                <p>
-                                    <a href="perfil.html">
-                                        <span class="disponivel">Disponível agora!</span>
-                                    </a>
-                                </p>
-
-                            </div>
-                            <div class="psicologo-bot">
-                                <div class="bot-wrapper">
-                                    <p>A partir de: <b>R$40,00</b></p>
-                                    <br />
-                                    <br />
-                                    <a href="perfil.html">
-                                        <div class="botaoSabia">Sabia mais</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="psicologos-wrapper plantao">
+                <div class="psicologos-wrapper">
                     <div class="psicologo">
                         <div class="psicologo .img">
-                            <img id="imgD" src="./images/pngegg.png">
+                            <img id="imgD" src="/images/LuizaPsicologa.png" />
                         </div>
                         <div class="detalhes">
                             <div class="psicologo-nome">
-                                <p>Eduardo Santos</p>
-                            </div>
-                            <div class="psicologo-detalhes">
-                                <p><b>Estado:</b>SP</p>
-                                <p><b>CRP</b>04/5588</p>
-                                <p><b>Psicologia Clínica e Traumas</b></p>
-                                <br />
-                                <p>
-                                    <a href="perfil.html">
-                                        <span class="disponivel">Disponível agora!</span>
-                                    </a>
-                                </p>
+                                <p>Silva de ferreira</p>
 
-                            </div>
-                            <div class="psicologo-bot">
-                                <div class="bot-wrapper">
-                                    <p>A partir de: <b>R$60,00</b></p>
-                                    <br />
-                                    <br />
-                                    <a href="perfil.html">
-                                        <div class="botaoSabia">Sabia mais</div>
-                                    </a>
+                                <div class="psicologo-detalhes">
+                                    <p><b>Estado:</b>SP</p>
+                                    <p><b>CRP</b>04/5588</p>
+                                    <p><b>Psicologia Infantojuvenil</b></p>
+                                    <br>
+                                    <p>
+                                        <a href="perfil.html">
+                                            <span class="disponivel">Disponível agora!</span>
+                                        </a>
+                                    </p>
+
+                                </div>
+                                <div class="psicologo-bot">
+                                    <div class="bot-wrapper">
+                                        <p>A partir de: <b>R$40,00</b></p>
+                                        <br />
+                                        <br />
+                                        <a href="perfil.html">
+                                            <div class="botaoSabia">Sabia mais</div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="psicologos-wrapper plantao">
-                    <div class="psicologo">
-                        <div class="psicologo .img">
-                            <img id="imgD" src="./images/pngegg (1).png">
-                        </div>
-                        <div class="detalhes">
-                            <div class="psicologo-nome">
-                                <p>Sergio Almeida</p>
+                    <div class="psicologos-wrapper plantao">
+                        <div class="psicologo">
+                            <div class="psicologo .img">
+                                <img id="imgD" src="./images/pngegg.png">
                             </div>
-                            <div class="psicologo-detalhes">
-                                <p><b>Estado:</b>SP</p>
-                                <p><b>CRP</b>04/5588</p>
-                                <p><b>Psicologia Clínica e Traumas</b></p>
-                                <br />
-                                <p>
-                                    <a href="perfil.aspx">
-                                        <span class="disponivel">Disponível agora!</span>
-                                    </a>
-                                </p>
+                            <div class="detalhes">
+                                <div class="psicologo-nome">
+                                    <p>Eduardo Santos</p>
+                                </div>
+                                <div class="psicologo-detalhes">
+                                    <p><b>Estado:</b>SP</p>
+                                    <p><b>CRP</b>04/5588</p>
+                                    <p><b>Psicologia Clínica e Traumas</b></p>
+                                    <br />
+                                    <p>
+                                        <a href="perfil.html">
+                                            <span class="disponivel">Disponível agora!</span>
+                                        </a>
+                                    </p>
 
-                            </div>
-                            <div class="psicologo-bot">
-                                <div class="bot-wrapper">
-                                    <p>A partir de: <b>R$60,00</b></p>
-                                    <br />
-                                    <br />
-                                    <a href="perfil.html">
-                                        <div class="botaoSabia">Sabia mais</div>
-                                    </a>
+                                </div>
+                                <div class="psicologo-bot">
+                                    <div class="bot-wrapper">
+                                        <p>A partir de: <b>R$60,00</b></p>
+                                        <br />
+                                        <br />
+                                        <a href="perfil.html">
+                                            <div class="botaoSabia">Sabia mais</div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="psicologos-wrapper plantao">
-                    <div class="psicologo">
-                        <div class="psicologo .img">
-                            <img id="imgD" src="./images/pngegg (1).png">
-                        </div>
-                        <div class="detalhes">
-                            <div class="psicologo-nome">
-                                <p>Sergio Almeida</p>
-                            </div>
-                            <div class="psicologo-detalhes">
-                                <p><b>Estado:</b>SP</p>
-                                <p><b>CRP</b>04/5588</p>
-                                <p><b>Psicologia Clínica e Traumas</b></p>
-                                <br />
-                                <p>
-                                    <a href="perfil.aspx">
-                                        <span class="disponivel">Disponível agora!</span>
-                                    </a>
-                                </p>
-
-                            </div>
-                            <div class="psicologo-bot">
-                                <div class="bot-wrapper">
-                                    <p>A partir de: <b>R$60,00</b></p>
-                                    <br />
-                                    <br />
-                                    <a href="perfil.html">
-                                        <div class="botaoSabia">Sabia mais</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="psicologos-wrapper2">
-                    <div class="psicologos-wrapper-plantao2">
+                    <div class="psicologos-wrapper plantao">
                         <div class="psicologo">
                             <div class="psicologo .img">
                                 <img id="imgD" src="./images/pngegg (1).png">
@@ -577,10 +506,81 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="psicologos-wrapper plantao">
+                        <div class="psicologo">
+                            <div class="psicologo .img">
+                                <img id="imgD" src="./images/pngegg (1).png">
+                            </div>
+                            <div class="detalhes">
+                                <div class="psicologo-nome">
+                                    <p>Sergio Almeida</p>
+                                </div>
+                                <div class="psicologo-detalhes">
+                                    <p><b>Estado:</b>SP</p>
+                                    <p><b>CRP</b>04/5588</p>
+                                    <p><b>Psicologia Clínica e Traumas</b></p>
+                                    <br />
+                                    <p>
+                                        <a href="perfil.aspx">
+                                            <span class="disponivel">Disponível agora!</span>
+                                        </a>
+                                    </p>
+
+                                </div>
+                                <div class="psicologo-bot">
+                                    <div class="bot-wrapper">
+                                        <p>A partir de: <b>R$60,00</b></p>
+                                        <br />
+                                        <br />
+                                        <a href="perfil.html">
+                                            <div class="botaoSabia">Sabia mais</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="psicologos-wrapper2">
+                        <div class="psicologos-wrapper-plantao2">
+                            <div class="psicologo">
+                                <div class="psicologo .img">
+                                    <img id="imgD" src="./images/pngegg (1).png">
+                                </div>
+                                <div class="detalhes">
+                                    <div class="psicologo-nome">
+                                        <p>Sergio Almeida</p>
+                                    </div>
+                                    <div class="psicologo-detalhes">
+                                        <p><b>Estado:</b>SP</p>
+                                        <p><b>CRP</b>04/5588</p>
+                                        <p><b>Psicologia Clínica e Traumas</b></p>
+                                        <br />
+                                        <p>
+                                            <a href="perfil.aspx">
+                                                <span class="disponivel">Disponível agora!</span>
+                                            </a>
+                                        </p>
+
+                                    </div>
+                                    <div class="psicologo-bot">
+                                        <div class="bot-wrapper">
+                                            <p>A partir de: <b>R$60,00</b></p>
+                                            <br />
+                                            <br />
+                                            <a href="perfil.html">
+                                                <div class="botaoSabia">Sabia mais</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-            </form>
+        </form>
     </main>
     <div class="psicologo-ver-mais-centralizado">
         <button class="botaoMais">Carregar mais psicólogos</button>

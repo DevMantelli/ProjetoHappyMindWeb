@@ -42,13 +42,22 @@ namespace ProjetoHappyMind.pages
         protected global::System.Web.UI.WebControls.Button BtnLogar;
 
         /// <summary>
+        /// Controle perfil.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm perfil;
+
+        /// <summary>
         /// Controle lblnome.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblnome;
+        protected global::System.Web.UI.WebControls.Label lblnome;
 
         /// <summary>
         /// Controle lblespecialidade.
@@ -57,7 +66,7 @@ namespace ProjetoHappyMind.pages
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblespecialidade;
+        protected global::System.Web.UI.WebControls.Label lblespecialidade;
 
         /// <summary>
         /// Controle lblnota.
@@ -66,7 +75,7 @@ namespace ProjetoHappyMind.pages
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblnota;
+        protected global::System.Web.UI.WebControls.Label lblnota;
 
         /// <summary>
         /// Controle description.
@@ -75,6 +84,15 @@ namespace ProjetoHappyMind.pages
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText description;
+        protected global::System.Web.UI.WebControls.TextBox description;
+
+        /// <summary>
+        /// Controle mc.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton mc;
     }
 }
