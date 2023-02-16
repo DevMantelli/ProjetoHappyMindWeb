@@ -32,7 +32,7 @@ namespace ProjetoHappyMind.pages
 
             psicologo Novopsicologos = new psicologo();//vinculando ao objeto
             Novopsicologos.selecionarComNome(Request.QueryString["nome"]);//peguei o query lá do objeto
-            Session["id"] = (Novopsicologos.id);//alterei pra session pegando a query
+            Session["id"] = Novopsicologos.id;//alterei pra session pegando a query
             Response.Redirect("calendario.aspx");
         }
     }

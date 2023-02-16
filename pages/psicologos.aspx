@@ -418,7 +418,7 @@
                                     <asp:Label ID="txtBoxTelefone1" runat="server" Text="none"></asp:Label>
                                     <asp:Label ID="txtBoxNotaC1" runat="server" Text="none"></asp:Label>
 
-                                   <asp:Button ID="btn" runat="server" Text="Disponível Agora"/>
+                                   <asp:Button ID="btn" runat="server" Text="Disponível Agora" OnClick="btn_Click"/>
 
                                 </div>
 
@@ -451,7 +451,7 @@
                                     <asp:Label ID="txtBoxTelefone2" runat="server" Text="none"></asp:Label>
                                     <asp:Label ID="txtBoxNotaC2" runat="server" Text="none"></asp:Label>
 
-                                   <asp:Button ID="Button1" runat="server" Text="Disponível Agora" />
+                                   <asp:Button ID="Button1" runat="server" Text="Disponível Agora" OnClick="Button1_Click" />
 
                                 </div>
                                 <div class="psicologo-bot">
@@ -483,7 +483,7 @@
                                     <asp:Label ID="txtBoxTelefone3" runat="server" Text="none"></asp:Label>
                                     <asp:Label ID="txtBoxNotaC3" runat="server" Text="none"></asp:Label>
 
-                                   <asp:Button ID="Button2" runat="server" Text="Disponível Agora"/>
+                                   <asp:Button ID="Button2" runat="server" Text="Disponível Agora" OnClick="Button2_Click"/>
 
                                 </div>
                                 <div class="psicologo-bot">
@@ -515,7 +515,7 @@
                                     <asp:Label ID="txtBoxTelefone4" runat="server" Text="none"></asp:Label>
                                     <asp:Label ID="txtBoxNotaC4" runat="server" Text="none"></asp:Label>
 
-                                   <asp:Button ID="Button3" runat="server" Text="Disponível Agora"/>
+                                   <asp:Button ID="Button3" runat="server" Text="Disponível Agora" OnClick="Button3_Click"/>
 
                                 </div>
                                 <div class="psicologo-bot">
@@ -548,7 +548,7 @@
                                     <asp:Label ID="txtBoxTelefone5" runat="server" Text="none"></asp:Label>
                                     <asp:Label ID="txtBoxNotaC5" runat="server" Text="none"></asp:Label>
 
-                                   <asp:Button ID="Button4" runat="server" Text="Disponível Agora"/>
+                                   <asp:Button ID="Button4" runat="server" Text="Disponível Agora" OnClick="Button4_Click"/>
 
                                 </div>
                                     <div class="psicologo-bot">

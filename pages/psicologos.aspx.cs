@@ -62,5 +62,30 @@ namespace ProjetoHappyMind.pages
                 }
             }
         }
+
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx?nome="+txtBoxNome1.Text);
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx?nome=" + txtBoxNome2.Text);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx?nome=" + txtBoxNome3.Text);
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx?nome=" + txtBoxNome4.Text);
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx?nome=" + txtBoxNome5.Text);
+        }
     }
 }
