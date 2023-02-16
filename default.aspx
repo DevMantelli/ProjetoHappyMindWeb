@@ -10,8 +10,8 @@
     <meta name="description" content="Site Para Consultas Psiquiátricas" />
     <meta name="keywords" content="Psicologia, Psiquiatra, Consulta, Happy Mind" />
     <link rel="icon" href="/images/Logo--img.png" />
-    <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Happy Mind</title>
 
@@ -555,8 +555,8 @@
             (SAMU).
         </p>
     </footer>
-    <script src="/assets/js/mobile-menu.js"></script>
-    <script src="/assets/js/login-modal.js"></script>
+    <script src="../assets/js/mobile-menu.js"></script>
+    <script src="../assets/js/login-modal.js"></script>
     <script>
         /***** SLIDE SHOW *****/
         let totalSlides = document.querySelectorAll('.slider--item').length;

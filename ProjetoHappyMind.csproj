@@ -74,11 +74,10 @@
     <Content Include="assets\js\mobile-menu.js" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="pages\cadastro-consulta.aspx" />
     <Content Include="pages\cadastro-usuario.aspx" />
     <Content Include="pages\calendario.aspx" />
     <Content Include="pages\horarios.aspx" />
-    <Content Include="pages\perfil-psicologo.aspx" />
+    <Content Include="pages\Perfil.aspx" />
     <Content Include="pages\psicologos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -95,13 +94,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="pages\cadastro-consulta.aspx.cs">
-      <DependentUpon>cadastro-consulta.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\cadastro-consulta.aspx.designer.cs">
-      <DependentUpon>cadastro-consulta.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\cadastro-usuario.aspx.cs">
       <DependentUpon>cadastro-usuario.aspx</DependentUpon>
@@ -124,12 +116,12 @@
     <Compile Include="pages\horarios.aspx.designer.cs">
       <DependentUpon>horarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\perfil-psicologo.aspx.cs">
-      <DependentUpon>perfil-psicologo.aspx</DependentUpon>
+    <Compile Include="pages\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\perfil-psicologo.aspx.designer.cs">
-      <DependentUpon>perfil-psicologo.aspx</DependentUpon>
+    <Compile Include="pages\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\psicologos.aspx.cs">
       <DependentUpon>psicologos.aspx</DependentUpon>

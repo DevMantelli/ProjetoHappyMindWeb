@@ -415,7 +415,7 @@
 
                                 <div class="psicologo-detalhes">
                                     <asp:Label ID="txtBoxDescricao1" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID=" txtBoxTelefone1" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxTelefone1" runat="server" Text="none"></asp:Label>
                                     <asp:Label ID="txtBoxNotaC1" runat="server" Text="none"></asp:Label>
 
                                    <asp:Button ID="btn" runat="server" Text="Disponível Agora"/>
@@ -444,12 +444,12 @@
                         <div class="detalhes">
                             <div class="psicologo-nome">
 
-                                <asp:Label ID="Label1" runat="server">Marcos Roberto</asp:Label>
+                                <asp:Label ID="txtBoxNome2" runat="server">Marcos Roberto</asp:Label>
 
                                 <div class="psicologo-detalhes">
-                                    <asp:Label ID="Label2" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label3" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label4" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxDescricao2" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxTelefone2" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxNotaC2" runat="server" Text="none"></asp:Label>
 
                                    <asp:Button ID="Button1" runat="server" Text="Disponível Agora" />
 
@@ -476,12 +476,12 @@
                         <div class="detalhes">
                             <div class="psicologo-nome">
 
-                                <asp:Label ID="Label5" runat="server">Julio Cesar</asp:Label>
+                                <asp:Label ID="txtBoxNome3" runat="server">Julio Cesar</asp:Label>
 
                                 <div class="psicologo-detalhes">
-                                    <asp:Label ID="Label6" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label7" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label8" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxDescricao3" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxTelefone3" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxNotaC3" runat="server" Text="none"></asp:Label>
 
                                    <asp:Button ID="Button2" runat="server" Text="Disponível Agora"/>
 
@@ -508,12 +508,12 @@
                         <div class="detalhes">
                             <div class="psicologo-nome">
 
-                                <asp:Label ID="Label9" runat="server">Maria Silva</asp:Label>
+                                <asp:Label ID="txtBoxNome4" runat="server">Maria Silva</asp:Label>
 
                                 <div class="psicologo-detalhes">
-                                    <asp:Label ID="Label10" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label11" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label12" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxDescricao4" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxTelefone4" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxNotaC4" runat="server" Text="none"></asp:Label>
 
                                    <asp:Button ID="Button3" runat="server" Text="Disponível Agora"/>
 
@@ -541,12 +541,12 @@
                         <div class="detalhes">
                             <div class="psicologo-nome">
 
-                                <asp:Label ID="Label13" runat="server">julia Americana</asp:Label>
+                                <asp:Label ID="txtBoxNome5" runat="server">julia Americana</asp:Label>
 
                                 <div class="psicologo-detalhes">
-                                    <asp:Label ID="Label14" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label15" runat="server" Text="none"></asp:Label>
-                                    <asp:Label ID="Label16" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxDescricao5" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxTelefone5" runat="server" Text="none"></asp:Label>
+                                    <asp:Label ID="txtBoxNotaC5" runat="server" Text="none"></asp:Label>
 
                                    <asp:Button ID="Button4" runat="server" Text="Disponível Agora"/>
 

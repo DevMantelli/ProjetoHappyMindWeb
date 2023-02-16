@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-namespace Happy_Mind.classes
+namespace ProjetoHappyMind.classes
 {
     public class usuario
     {

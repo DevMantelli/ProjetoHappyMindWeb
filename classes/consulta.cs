@@ -6,13 +6,13 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-namespace Happy_Mind.classes
+namespace ProjetoHappyMind.classes
 {
     public class consulta
     {
         private int idP, idU;
         private string data, hora;
-        public string[] horas = new string[24];
+        public string[] horas = new string[23];
 
         SqlConnection conexao = new SqlConnection(ConfigurationManager.ConnectionStrings[0].ConnectionString.ToString());
 
@@ -68,7 +68,7 @@ namespace Happy_Mind.classes
                     int cont = 1;
                     while (leitor.Read())
                     {
-                        horas[cont] = leitor.GetString(8);
+                        horas[cont] = leitor.GetString(4);
                         cont++;
                     }
                 }

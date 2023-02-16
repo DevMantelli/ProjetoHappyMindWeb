@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-namespace Happy_Mind.classes
+namespace ProjetoHappyMind.classes
 {
     public class psicologo
     {
@@ -21,7 +21,7 @@ namespace Happy_Mind.classes
         public decimal cfp { get; set; }
         public decimal nota { get; set; }
 
-        public string[] nomes = new string[6];
+        public string[] nomes = new string[4];
 
         public void construtor(int idC, string nomeC, decimal cpfC, string emailC, decimal telefoneC, decimal cfpC, string descricaoC, decimal notaC, string imgPerfilC, string senhaC)
         {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Happy_Mind.classes;
+using ProjetoHappyMind.classes;
 
-namespace Happy_Mind.pages
+namespace ProjetoHappyMind.pages
 {
     public partial class horarios : System.Web.UI.Page
     {
