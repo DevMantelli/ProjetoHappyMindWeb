@@ -72,6 +72,7 @@
     <Content Include="assets\js\calendar.js" />
     <Content Include="assets\js\login-modal.js" />
     <Content Include="assets\js\mobile-menu.js" />
+    <Content Include="assets\js\validacao.js" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="pages\cadastro-usuario.aspx" />
