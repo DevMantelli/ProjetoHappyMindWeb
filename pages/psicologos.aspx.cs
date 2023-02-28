@@ -17,8 +17,8 @@ namespace ProjetoHappyMind.pages
             if (Session["filtro"] != null)
             {
                 txtLabelFiltro.text = Convert.ToString(Session["filtro"]);
+                Session.Remove("filtro");
             }
-            Session["filtro"] = txtLabelFiltro.text;
             psicologo psicologos = new psicologo();
             psicologos.filtroManeiro(txtLabelFiltro.text);
 
@@ -67,7 +67,11 @@ namespace ProjetoHappyMind.pages
                 }
             }
         }
-
+        protected void btn_Filtro(object sender, EventArgs e)
+        {
+            Session["filtro"] = txtLabelFiltro.text;
+            Page_Load(sender,e);
+        }
         protected void btn_Click(object sender, EventArgs e)
         {
             Response.Redirect("Perfil.aspx?nome="+txtBoxNome1.Text);
