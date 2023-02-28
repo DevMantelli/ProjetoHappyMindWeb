@@ -14,6 +14,11 @@ namespace ProjetoHappyMind.pages
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["filtro"] != null)
+            {
+                txtLabelFiltro.text = Convert.ToString(Session["filtro"]);
+            }
+            Session["filtro"] = txtLabelFiltro.text;
             psicologo psicologos = new psicologo();
             psicologos.filtroManeiro(txtLabelFiltro.text);
 
