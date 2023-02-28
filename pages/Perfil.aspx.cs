@@ -29,11 +29,37 @@ namespace ProjetoHappyMind.pages
         }
         protected void a_Click(object sender, EventArgs e)
         {
-
-            psicologo Novopsicologos = new psicologo();//vinculando ao objeto
-            Novopsicologos.selecionarComNome(Request.QueryString["nome"]);//peguei o query lá do objeto
-            Session["id"] = Novopsicologos.id;//alterei pra session pegando a query
-            Response.Redirect("calendario.aspx");
+            if(Session["idU"] == null)
+            {
+                psicologo Novopsicologos = new psicologo();//vinculando ao objeto
+                Novopsicologos.selecionarComNome(Request.QueryString["nome"]);//peguei o query lá do objeto
+                Session["idP"] = Novopsicologos.id;//alterei pra session pegando a query
+                Response.Redirect("calendario.aspx");
+            }
+            else
+            {
+                Response.Write("Faça seu login primeiro!!");
+            }
+        }
+        protected void BtnLogar_Click(object sender, EventArgs e)
+        {
+            if (txtEmail.Text != "" && txtSenha.Text != "")
+            {
+                usuario novoUsuario = new usuario();
+                if (novoUsuario.select(txtEmail.Text, txtSenha.Text) == "")
+                {
+                    Session["idU"] = novoUsuario.id;
+                    Response.Write("Login Efetuado!!");
+                }
+                else
+                {
+                    Response.Write(novoUsuario.select(txtEmail.Text, txtSenha.Text));
+                }
+            }
+            else
+            {
+                Response.Write("Preencha todos os campos devidamente!!");
+            }
         }
     }
 }

@@ -15,22 +15,22 @@ namespace ProjetoHappyMind.pages
     {
 
         /// <summary>
-        /// Controle TextBox1.
+        /// Controle txtEmail2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail2;
 
         /// <summary>
-        /// Controle txtSenha.
+        /// Controle txtSenha2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+        protected global::System.Web.UI.WebControls.TextBox txtSenha2;
 
         /// <summary>
         /// Controle BtnLogar.

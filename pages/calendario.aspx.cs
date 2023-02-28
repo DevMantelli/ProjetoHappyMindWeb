@@ -12,8 +12,9 @@ namespace ProjetoHappyMind.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["idU"] == null)
+            if (Session["idU"] == null || Session["idP"] == null)
             {
+                Response.Write("Faça seu login primeiro!!");
                 Response.Redirect("../default.aspx");
             }
         }

@@ -64,7 +64,7 @@ namespace ProjetoHappyMind.classes
                 SqlCommand cmd = new SqlCommand();
                 SqlDataReader leitor;
 
-                cmd.CommandText = "select * from usuario where email =" + email + ", senha=" + senha;
+                cmd.CommandText = "select idUsuario from usuario where email =" + email + ", senha=" + senha;
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = conexao;
 
@@ -74,6 +74,7 @@ namespace ProjetoHappyMind.classes
 
                 if (leitor.HasRows)
                 {
+                    id = leitor.GetInt32(0);
                     return "";
                 }
                 else

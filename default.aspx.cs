@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ProjetoHappyMind.classes;
 
 namespace ProjetoHappyMind
 {
@@ -18,9 +19,22 @@ namespace ProjetoHappyMind
 
         protected void BtnLogar_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text != "" && txtSenha.Text != "")
+            if (txtEmail.Text != "" && txtSenha.Text != "")
             {
-                
+                usuario novoUsuario = new usuario();
+                if (novoUsuario.select(txtEmail.Text, txtSenha.Text) == "")
+                {
+                    Session["idU"] = novoUsuario.id;
+                    Response.Write("Login Efetuado!!");
+                }
+                else
+                {
+                    Response.Write(novoUsuario.select(txtEmail.Text, txtSenha.Text));
+                }
+            }
+            else
+            {
+                Response.Write("Preencha todos os campos devidamente!!");
             }
         }
     }

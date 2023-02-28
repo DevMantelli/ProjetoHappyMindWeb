@@ -439,7 +439,7 @@
 
                 <div class="login--card">
                     <asp:Label for="login" runat="server">Usuário</asp:Label>
-                    <asp:TextBox id="txtLogin" runat="server"></asp:TextBox>
+                    <asp:TextBox id="txtEmail" runat="server"></asp:TextBox>
                 </div>
                 <div class="senha--card">
                     <asp:Label for="senha" runat="server">Senha</asp:Label>

@@ -15,7 +15,7 @@ namespace ProjetoHappyMind.pages
         protected void Page_Load(object sender, EventArgs e)
         {
             psicologo psicologos = new psicologo();
-            //psicologos.filtroManeiro(txtLabelFiltro.text);
+            psicologos.filtroManeiro(txtLabelFiltro.text);
 
             for (int i = 0; i < 5; i++)
             {
@@ -86,6 +86,26 @@ namespace ProjetoHappyMind.pages
         protected void Button4_Click(object sender, EventArgs e)
         {
             Response.Redirect("Perfil.aspx?nome=" + txtBoxNome5.Text);
+        }
+        protected void BtnLogar_Click(object sender, EventArgs e)
+        {
+            if (txtEmail.Text != "" && txtSenha.Text != "")
+            {
+                usuario novoUsuario = new usuario();
+                if (novoUsuario.select(txtEmail.Text, txtSenha.Text) == "")
+                {
+                    Session["idU"] = novoUsuario.id;
+                    Response.Write("Login Efetuado!!");
+                }
+                else
+                {
+                    Response.Write(novoUsuario.select(txtEmail.Text, txtSenha.Text));
+                }
+            }
+            else
+            {
+                Response.Write("Preencha todos os campos devidamente!!");
+            }
         }
     }
 }

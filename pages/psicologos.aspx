@@ -382,7 +382,7 @@
 
                 <div class="login--card">
                     <asp:Label for="login" runat="server">Usuário</asp:Label>
-                    <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                 </div>
                 <div class="senha--card">
                     <asp:Label for="senha" runat="server">Senha</asp:Label>
@@ -392,7 +392,7 @@
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
                     <a href="/">Esqueci a senha</a>
                 </div>
-                <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" />
+                <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" OnClick="BtnLogar_Click"/>
             </form>
         </div>
 
@@ -569,9 +569,6 @@
             </div>
         </form>
     </main>
-    <div class="psicologo-ver-mais-centralizado">
-        <button class="botaoMais">Carregar mais psicólogos</button>
-    </div>
     <footer>
         <div id="footer2">
             <figure>

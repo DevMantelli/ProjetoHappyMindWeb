@@ -204,18 +204,18 @@
 
                 <div class="login--card">
                     <asp:Label for="login" runat="server">Usuário</asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail2" runat="server"></asp:TextBox>
                 </div>
                 <div class="senha--card">
                     <asp:Label for="senha" runat="server">Senha</asp:Label>
-                    <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSenha2" runat="server"></asp:TextBox>
                 </div>
                 <div class="modal--links">
                     <a href="/pages/cadastro-usuario.html">Cadastre-se</a>
                     <a href="/">Esqueci a senha</a>
                 </div>
 
-                <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" />
+                <asp:Button ID="BtnLogar" CssClass="btn--login" runat="server" Text="Logar" OnClick="BtnLogar_Click"/>
             </form>
         </div>
 
@@ -241,7 +241,7 @@
                 <label for="alerta"></label>
             </div>
             <div id="btnEnviarFormulario">
-                <asp:Button value="Cadastrar" ID="btnCadastrar" runat="server"></asp:Button>
+                <asp:Button value="Cadastrar" ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click"></asp:Button>
             </div>
         </form>
     </main>
