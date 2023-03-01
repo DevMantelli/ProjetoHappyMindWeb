@@ -67,12 +67,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assests\css\footer.css" />
-    <Content Include="assests\css\header.css" />
-    <Content Include="assests\js\calendar.js" />
-    <Content Include="assests\js\login-modal.js" />
-    <Content Include="assests\js\mobile-menu.js" />
-    <Content Include="assests\js\validacao.js" />
+    <Content Include="assets\css\footer.css" />
+    <Content Include="assets\css\header.css" />
+    <Content Include="assets\images\email-icon.png" />
+    <Content Include="assets\images\email.png" />
+    <Content Include="assets\images\Logo--img.png" />
+    <Content Include="assets\images\Logo--Texto.png" />
+    <Content Include="assets\images\Logo2.png" />
+    <Content Include="assets\images\LuizaPsicologa.png" />
+    <Content Include="assets\images\Online page-amico.png" />
+    <Content Include="assets\images\perfil.jpeg" />
+    <Content Include="assets\images\pngegg %281%29.png" />
+    <Content Include="assets\images\pngegg.png" />
+    <Content Include="assets\images\Psychologist-rafiki.png" />
+    <Content Include="assets\images\wave-haikei.svg" />
+    <Content Include="assets\images\wave-haikeiBottom.svg" />
+    <Content Include="assets\images\Wavebot.svg" />
+    <Content Include="assets\images\Wavetop.svg" />
+    <Content Include="assets\images\whats-app-icon.png" />
+    <Content Include="assets\images\whatsapp.png" />
+    <Content Include="assets\js\calendar.js" />
+    <Content Include="assets\js\login-modal.js" />
+    <Content Include="assets\js\mobile-menu.js" />
+    <Content Include="assets\js\validacao.js" />
     <Content Include="default.aspx" />
     <Content Include="pages\cadastro-usuario.aspx" />
     <Content Include="pages\calendario.aspx" />
@@ -138,9 +155,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assests\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
