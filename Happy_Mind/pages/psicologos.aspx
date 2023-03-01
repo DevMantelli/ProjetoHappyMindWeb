@@ -400,8 +400,6 @@
 
     <h1 id="banner-destaque" class="banner-psicologos">Psicólogos</h1>
     <main>
-
-        <form runat="server">
             <div class="psicologos-wrapper">
                 <div class="psicologos-wrapper">
                     <div class="psicologo">
@@ -567,7 +565,6 @@
                     </div>
                 </div>
             </div>
-        </form>
     </main>
     <footer>
         <div id="footer2">

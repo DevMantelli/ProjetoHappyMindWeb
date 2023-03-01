@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site Para Consultas Psiquiátricas" />
     <meta name="keywords" content="Psicologia, Psiquiatra, Consulta, Happy Mind" />
-    <link rel="icon" href="assets/images/Logo--img.png" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="icon" href="/assets/images/Logo--img.png" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Happy Mind</title>
 
@@ -412,7 +412,7 @@
 <body>
     <header>
         <a href="/default.html">
-            <img class="logo--header" src="assets/images/Logo--img.png" alt=""></a>
+            <img class="logo--header" src="/assets/images/Logo--img.png" alt=""></a>
 
         <div class="nav--desktop">
             <a href="pages/psicologos.aspx">
@@ -458,8 +458,8 @@
     <main class="main--container-default">
 
         <div class="slogan--container">
-            <img class="img--logo-texto-h1" src="/images/Logo--Texto.png" alt="">
-            <img class="bg--image-slogan" src="/images/Online page-amico.png" alt="">
+            <img class="img--logo-texto-h1" src="/assets/images/Logo--Texto.png" alt="">
+            <img class="bg--image-slogan" src="/assets/images/Online page-amico.png" alt="">
             <div class="slogan--container-texto">
                 <p>
                     A HappyMind é um espaço 100% online onde você poderá receber auxílio de profissionais da area da
@@ -482,7 +482,7 @@
             </div>
             <div class="container--saiba-mais-link">
                 <a href="/pages/psicologos.html">Venha Conhecê-los</a>
-                <img class="img--logo-side" src="/images/Psychologist-rafiki.png" alt="">
+                <img class="img--logo-side" src="/assets/images/Psychologist-rafiki.png" alt="">
             </div>
         </div>
 
@@ -531,16 +531,16 @@
     <footer>
         <div id="footer2">
             <figure>
-                <img src="../images/logo2.png" alt="logo" id="logoFooter">
+                <img src="/assets/images/logo2.png" alt="logo" id="logoFooter">
             </figure>
 
             <address>
-                <img src="../images/email.png" alt="E-mail" id="imgEmail">
+                <img src="/assets/images/email.png" alt="E-mail" id="imgEmail">
                 <a class="socialFooter" href="">: Contato@HappyMind.com</a>
             </address>
 
             <address>
-                <img src="../images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
+                <img src="/assets/images/whatsapp.png" alt="Whatsapp" id="imgWhatsapp">
                 <a class="socialFooter" href="">: (13) 99639-6895</a>
             </address>
 

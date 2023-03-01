@@ -19,8 +19,7 @@ namespace Happy_Mind.pages
             }
             psicologo psicologos = new psicologo();
             //psicologos.filtroManeiro(txtLabelFiltro.text);
-
-            for (int i = 0; i < 5; i++)
+            /*for (int i = 0; i < 5; i++)
             {
                 psicologos.selecionarComNome(psicologos.nomes[i]);
                 if (i == 0)
@@ -63,7 +62,7 @@ namespace Happy_Mind.pages
                     txtBoxTelefone5.Text = psicologos.telefone.ToString();
                     txtBoxNotaC5.Text = psicologos.nota.ToString();
                 }
-            }
+            }*/
         }
         protected void btn_Filtro(object sender, EventArgs e)
         {
